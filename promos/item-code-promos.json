@@ -3,84 +3,84 @@
     "code": "195",
     "name": "ERCAVET",
     "unit": "12 ML",
-    "price": 117.92
+    "price": 70
   },
   {
     "code": "551",
     "name": "SCAR BIO TOPICO",
     "unit": "120 ML",
-    "price": 346.5
+    "price": 95
   },
   {
     "code": "382",
     "name": "YATRINMUNE CUIDA",
     "unit": "12 ML",
-    "price": 156.66
+    "price": 199
   },
   {
     "code": "561",
     "name": "DORA EQUINO ADE",
     "unit": "2X12 ML",
-    "price": 245
+    "price": 99
   },
   {
     "code": "567",
     "name": "SUPER VITAMINA B12 5.500 + B15",
     "unit": "100 ML",
-    "price": 630
+    "price": 290
   },
   {
     "code": "361",
     "name": "VITAMIN B COMPLEX",
     "unit": "100 ML",
-    "price": 199.39
+    "price": 90
   },
   {
     "code": "369",
     "name": "VITAMINA ADE + COMPLEJO B",
     "unit": "500 ML",
-    "price": 1045.22
+    "price": 430
   },
   {
     "code": "7",
     "name": "ALBENDABIO 25% FORTE",
     "unit": "1 LT",
-    "price": 1153.01
+    "price": 450
   },
   {
     "code": "127",
     "name": "CALFORVET ORAL",
     "unit": "300 ML",
-    "price": 245.67
+    "price": 100
   },
   {
     "code": "406",
     "name": "LAMICIL 200/LA",
     "unit": "500 ML",
-    "price": 771.1
+    "price": 310
   },
   {
     "code": "278",
     "name": "LINCO FLOR",
     "unit": "250 ML",
-    "price": 750.75
+    "price": 300
   },
   {
     "code": "340",
     "name": "TRIBENZATIL 1/2 MILL PUPPY",
     "unit": "1/2 Mill",
-    "price": 85.16
+    "price": 65
   },
   {
     "code": "128",
     "name": "CANOVET",
     "unit": "30 TAB",
-    "price": 290.95
+    "price": 200
   },
   {
     "code": "210",
     "name": "GARROTILLO",
     "unit": "20 TAB",
-    "price": 167.81
+    "price": 115
   }
 ]
