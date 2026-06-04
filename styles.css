@@ -1,0 +1,297 @@
+/* Estilos para el contenedor del carrusel */
+.contenedor-carrusel {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Estilo de la imagen activa */
+.imagen-carrusel {
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Carousel slide effect */
+.carousel-viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(.22, .9, .36, 1);
+    will-change: transform;
+}
+
+.imagen-carrusel-slide {
+    flex: 0 0 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Botones de navegación flotantes */
+.btn-navegacion {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(52, 49, 192, 0.7) !important;
+}
+
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}
+
+/* Indicadores de puntos inferiores */
+.indicadores {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+.punto {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(185, 95, 95, 0.5);
+    transition: background-color 0.3s;
+}
+
+.punto.active {
+    background-color: #e41b1b;
+    transform: scale(1.2);
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background: rgba(35, 79, 182, 0.95);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.nav-principal,
+.nav-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.nav-principal a,
+.nav-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-principal a:hover,
+.nav-footer a:hover {
+    color: #000000;
+    transform: translateY(-1px);
+}
+
+.md-content {
+    background: transparent !important;
+    color: #ffffff;
+}
+
+.seccion {
+    max-width: 1000px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 24px 28px;
+    border-radius: 16px;
+    background: rgba(35, 79, 182, 0.95);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    color: #f4f4f4;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.seccion h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.seccion p {
+    color: #d8dde3;
+    line-height: 1.7;
+}
+
+.promo-section {
+    max-width: 1200px;
+    width: 95%;
+    margin: 32px auto;
+    padding: 24px 28px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    color: #102a5b;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.promo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.promo-header h3 {
+    margin: 0;
+    color: #11215c;
+    font-size: 1.7rem;
+}
+
+.promo-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.promo-arrow {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: #234fb6;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: 0 10px 24px rgba(35, 79, 182, 0.25);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.promo-arrow:hover {
+    transform: translateY(-2px);
+    background: #1f3f97;
+}
+
+
+/* Slider layout: single row with 4 visible cards */
+.promo-viewport {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.promo-track {
+    display: flex;
+    height: auto;
+    gap: 22px;
+    transition: transform 0.6s cubic-bezier(.22, .9, .36, 1);
+    will-change: transform;
+}
+
+.promo-card {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(35, 79, 182, 0.12);
+    flex: 0 0 calc((100% - 66px) / 4);
+    min-width: 200px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+}
+
+.promo-card:hover {
+    box-shadow: 0 26px 50px rgba(0, 0, 0, 0.14);
+    border-color: rgba(35, 79, 182, 0.22);
+    background: #7588c5;
+}
+
+.promo-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: #f7f9ff;
+}
+
+.promo-card-body {
+    padding: 18px 16px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.promo-card .promo-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #000000;
+    margin: 0;
+}
+
+.promo-card h4 {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    color: #102a5b;
+}
+
+.promo-card p {
+    margin: 0;
+    color: #5d6f8d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.promo-card .promo-price {
+    text-align: center;
+    margin-top: auto;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #00ff00;
+    border-radius: 8px;
+    background: #284abd;
+}
+
+.pie-pagina {
+    padding: 22px 20px;
+    text-align: center;
+    color: #d7d7d7;
+    background: rgba(35, 79, 182, 0.95);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pie-pagina p {
+    margin: 10px 0 0;
+    font-size: 0.95rem;
+}

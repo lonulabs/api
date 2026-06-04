@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="miApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biofarmex Bodega</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- CSS de Angular Material v1.x -->
+    <link rel="stylesheet"
+        href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="CarruselController" ng-cloak>
+
+    <!-- Encabezado con logo y navegación -->
+    <header class="cabecera">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span class="logo-text">Biofarmex Bodega</span>
+        </div>
+        <nav class="nav-principal">
+            <a href="#nosotros">Nosotros</a>
+            <a href="#promociones">Promociones</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Contenedor Principal con Tarjeta de Angular Material -->
+    <md-content class="md-padding" layout="column" layout-align="center center">
+
+        <md-card class="contenedor-carrusel" md-whiteframe="4">
+            <!-- Carousel viewport/track using Angular images and active index -->
+            <div class="carousel-viewport" ng-mouseenter="pause()" ng-mouseleave="resume()">
+                <div class="carousel-track" ng-style="{'transform': 'translateX(-' + (active * 100) + '%)'}">
+                    <img ng-repeat="img in images track by $index" ng-src="{{img}}" alt="Imagen {{$index + 1}}"
+                        class="imagen-carrusel-slide">
+                </div>
+            </div>
+
+            <!-- Botón Izquierdo -->
+            <md-button class="md-icon-button btn-navegacion btn-prev" ng-click="anterior()" aria-label="Anterior">
+                <md-icon>chevron_left</md-icon>
+            </md-button>
+
+            <!-- Botón Derecho -->
+            <md-button class="md-icon-button btn-navegacion btn-next" ng-click="siguiente()" aria-label="Siguiente">
+                <md-icon>chevron_right</md-icon>
+            </md-button>
+
+            <!-- Puntos Indicadores Inferiores -->
+            <div class="indicadores" layout="row" layout-align="center center">
+                <div ng-repeat="img in images" class="punto" ng-class="{'active': $index === active}"
+                    ng-click="irA($index)"></div>
+            </div>
+        </md-card>
+
+        <section id="promociones" class="promo-section">
+            <div class="promo-header">
+                <h3>Promociones de la semana</h3>
+                <div class="promo-nav">
+                    <button class="promo-arrow" type="button">‹</button>
+                    <button class="promo-arrow" type="button">›</button>
+                </div>
+            </div>
+
+            <div class="promo-viewport">
+                <div class="promo-track">
+                    <article class="promo-card" ng-repeat="promo in promos track by $index">
+                        <img ng-src="promos/p%20({{ $index + 1 }}).png" alt="{{promo.code}} - {{promo.name}}">
+                        <div class="promo-card-body">
+                            <p class="promo-label">{{promo.unit}}</p>
+                            <h4>{{promo.name}}</h4>
+                            <p class="promo-price">${{promo.price | number:2}}</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="seccion">
+            <h3>Su opinión es lo más importante para nosotros.</h3>
+            <p>Conoce más sobre nuestro equipo y nuestra pasión por el perreo.</p>
+        </section>
+
+    </md-content>
+
+    <!-- Pie de página con enlaces -->
+    <footer class="pie-pagina">
+        <nav class="nav-footer">
+            <a href="#nosotros">Nosotros</a>
+            <a href="#promociones">Promociones</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <p>© 2026 Biofarmex Bodega. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts requeridos: AngularJS, Animate, Aria y Angular Material -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
