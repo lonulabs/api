@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biofarmex Bodega</title>
-    <meta property="og:image" content="https://lonulabs.github.io/api/images/gilles-detot-unsplash.jpg" />
+    <meta property="og:image" content="images/christina-maiia-unsplash.jpg" />
     <link rel="icon" href="logo.png" type="image/png">
     <!-- CSS de Angular Material v1.x -->
     <link rel="stylesheet"
@@ -38,7 +38,7 @@
             <!-- Carousel viewport/track using Angular images and active index -->
             <div class="carousel-viewport" ng-mouseenter="pause()" ng-mouseleave="resume()">
                 <div class="carousel-track" ng-style="{'transform': 'translateX(-' + (active * 100) + '%)'}">
-                    <img ng-repeat="img in images track by $index" ng-src="{{img}}" alt="Imagen {{$index + 1}}"
+                    <img ng-repeat="img in imageSet track by $index" ng-src="{{img}}" alt="Imagen {{$index + 1}}"
                         class="imagen-carrusel-slide">
                 </div>
             </div>
@@ -72,7 +72,7 @@
             <div class="promo-viewport">
                 <div class="promo-track">
                     <article class="promo-card" ng-repeat="promo in promos track by $index">
-                        <img ng-src="promos/p%20({{ $index + 1 }}).png" alt="{{promo.code}} - {{promo.name}}">
+                        <img ng-src="{{getPromoImageUrl($index + 1)}}" alt="{{promo.code}} - {{promo.name}}">
                         <div class="promo-card-body">
                             <p class="promo-label">{{promo.unit}}</p>
                             <h4>{{promo.name}}</h4>
