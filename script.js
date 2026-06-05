@@ -6,13 +6,34 @@ angular.module('miApp', ['ngMaterial'])
             'images/daniel-quiceno-m-unsplash.jpg',
             'images/gilles-detot-unsplash.jpg'
         ];
+        $scope.webp_img = [
+            'images/marino-bobetic-unsplash.webp',
+            'images/christina-maiia-unsplash.webp',
+            'images/daniel-quiceno-m-unsplash.webp',
+            'images/gilles-detot-unsplash.webp'
+        ];
         $scope.promos = [];
         $http.get('promos/item-code-promos.json').then(function (resp) {
             $scope.promos = resp.data || [];
         }, function () { $scope.promos = []; });
         $scope.active = 0;
+        $scope.imageSet = $scope.images;
+
+        function updateImageSet() {
+            $scope.imageSet = window.innerWidth <= 600 ? $scope.webp_img : $scope.images;
+        }
+
+        updateImageSet();
+        window.addEventListener('resize', function () {
+            $scope.$applyAsync(updateImageSet);
+        });
+
+        $scope.getPromoImageUrl = function (index) {
+            const ext = window.innerWidth <= 600 ? 'webp' : 'png';
+            return 'promos/p%20(' + index + ').' + ext;
+        };
         const indice = $scope.images.length - 1;
-        const time = 2000;
+        const time = 4000;
 
         function advance() {
             $scope.active = ($scope.active < indice) ? $scope.active + 1 : 0;
@@ -40,7 +61,10 @@ angular.module('miApp', ['ngMaterial'])
         $scope.anterior = function () { $scope.active = ($scope.active > 0) ? $scope.active - 1 : indice; $scope.restart(); };
         $scope.irA = function (index) { $scope.active = index; $scope.restart(); };
 
-        $scope.$on('$destroy', function () { if (auto) $interval.cancel(auto); });
+        $scope.$on('$destroy', function () {
+            if (auto) $interval.cancel(auto);
+            window.removeEventListener('resize', updateImageSet);
+        });
     });
 
 (function () {
