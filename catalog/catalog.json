@@ -1,0 +1,1011 @@
+[
+  {
+    "name": "ALBENDABIO 100",
+    "image": "img/1.webp",
+    "tags": [
+      "Desparasitantes"
+    ],
+    "formats": [
+      [
+        2,
+        "100 ML",
+        143.34
+      ],
+      [
+        3,
+        "250 ML",
+        274.19
+      ],
+      [
+        4,
+        "1 LT",
+        877.37
+      ],
+      [
+        479,
+        "5 LT",
+        3478.75
+      ]
+    ],
+    "info": "AlbendaBio 10% es un desparasitante interno de amplio espectro formulado a base de albendazol, eficaz para el tratamiento y prevención de parásitos gastrointestinales, pulmonares y genitourinarios en animales de producción.",
+    "dosis": "1 a 2 mL por cada 20 kg de peso corporal."
+  },
+  {
+    "name": "ALBENDABIO 250 FORTE",
+    "image": "img/2.webp",
+    "tags": [
+      "Desparasitantes"
+    ],
+    "formats": [
+      [
+        5,
+        "100 ML",
+        196.91
+      ],
+      [
+        6,
+        "250 ML",
+        360.31
+      ],
+      [
+        7,
+        "1 LT",
+        1153
+      ],
+      [
+        8,
+        "5 LT",
+        4503.93
+      ]
+    ],
+    "info": "AlbendaBio 25% Forte es un antihelmíntico y fasciolicida de amplio espectro en suspensión oral, formulado para el tratamiento y control de parásitos gastrointestinales, pulmonares y hepáticos en rumiantes.",
+    "dosis": "Administrar 1 mL por cada 25 kg de peso corporal."
+  },
+  {
+    "name": "ANTI ESTRES",
+    "image": "img/107.webp",
+    "tags": [
+      "Suplementos"
+    ],
+    "formats": [
+      [
+        25,
+        "25X20 G",
+        569.66
+      ],
+      [
+        403,
+        "1 KG",
+        880
+      ],
+      [
+        461,
+        "10 KG",
+        null
+      ],
+      [
+        "025.1",
+        "1X20 G",
+        28.48
+      ]
+    ]
+  },
+  {
+    "name": "B12 5.500",
+    "image": "img/41.webp",
+    "tags": [
+      "Vitaminas"
+    ],
+    "formats": [
+      [
+        29,
+        "10 ML",
+        108.75
+      ],
+      [
+        30,
+        "20 TAB",
+        150.67
+      ],
+      [
+        31,
+        "100 ML",
+        620.71
+      ],
+      [
+        32,
+        "250 ML",
+        1241.44
+      ],
+      [
+        454,
+        "5 ML",
+        74.8
+      ],
+      [
+        455,
+        "50 ML",
+        349.8
+      ]
+    ],
+    "info": "B12/5,500 es un vigorizante y reconstituyente metabólico formulado especialmente para animales sometidos a actividad física intensa. Su alto contenido de vitamina B12 y nutrientes complementarios estimula el metabolismo energético, mejora la oxigenación tisular y favorece la recuperación muscular. Está indicado principalmente para caballos de trabajo o competencia y gallos de pelea, ayudando a optimizar su rendimiento físico, fuerza y resistencia.",
+    "dosis": "Intramuscular; Gallos de Pelea: 0.5 ml. Caballos y bovinos: 5 ml. Porcinos, ovi-caprinos: 0.6 a 1 ml. Caninos y felinos: 0.5 a 1 ml. Repetir la aplicación a los 3 días"
+  },
+  {
+    "name": "BIO DEXAVET",
+    "image": "img/110.webp",
+    "tags": [
+      "Antiinflamatorios"
+    ],
+    "formats": [
+      [
+        51,
+        "10 ML",
+        38.85
+      ],
+      [
+        52,
+        "25 ML",
+        74.44
+      ],
+      [
+        53,
+        "100 ML",
+        188.34
+      ],
+      [
+        54,
+        "250 ML",
+        376.69
+      ],
+      [
+        55,
+        "500 ML",
+        628.91
+      ],
+      [
+        388,
+        "50 ML",
+        101.2
+      ]
+    ],
+    "info": "Bio-Dexavet es un glucocorticoide de acción prolongada diseñado para uso en animales, con efecto antiinflamatorio sostenido. Actúa reduciendo la inflamación y modulando la respuesta inmunitaria, estando indicado para el tratamiento de procesos inflamatorios que requieren una acción prolongada del medicamento.",
+    "dosis": "1 ml / 50 kg de peso corporal. Equivalente a 40 mcg por kg de peso"
+  },
+  {
+    "name": "BIO HIERRO 200",
+    "image": "img/47.webp",
+    "tags": [
+      "Suplementos"
+    ],
+    "formats": [
+      [
+        61,
+        "10 ML",
+        75
+      ],
+      [
+        62,
+        "20 ML",
+        136.43
+      ],
+      [
+        63,
+        "100 ML",
+        409.29
+      ],
+      [
+        64,
+        "250 ML",
+        783.29
+      ],
+      [
+        396,
+        "50 ML",
+        204.6
+      ]
+    ],
+    "info": "Bio-Hierro 200 es un compuesto antianémico formulado para la prevención, tratamiento y control de anemias causadas por deficiencia de hierro en animales domésticos y de producción. Su formulación contiene hierro biodisponible de rápida absorción y acción prolongada, lo que favorece la formación de hemoglobina y glóbulos rojos, mejorando la oxigenación de los tejidos y el desarrollo corporal.",
+    "dosis": "Intramuscular profunda; Lechones edad 3 a 4 días: 1 ml. Bovinos de 1 a 6 semanas: 1 a 3 ml. Ovi-caprinos 1 a 3 semanas: a 2 m"
+  },
+  {
+    "name": "BIO MELUBRIN 500",
+    "image": "img/112.jpg",
+    "tags": [
+      "Suplementos"
+    ],
+    "formats": [
+      [
+        66,
+        "20 ML",
+        73.26
+      ],
+      [
+        67,
+        "100 ML",
+        48196.52
+      ],
+      [
+        68,
+        "250 ML",
+        393.07
+      ],
+      [
+        69,
+        "500 ML",
+        628.9
+      ]
+    ],
+    "info": "Bio Melubrin es un potente analgésico con efecto antipirético, antiespasmódico y antiinflamatorio. Se utiliza para aliviar el dolor, reducir la fiebre, relajar el músculo liso y tratar la inflamación en animales que padecen enfermedades reumáticas, traumatismos o en procesos postoperatorios. También puede usarse en cólicos del tracto gastrointestinal, urinario o biliares.",
+    "dosis": "Aplicar 1 mL por cada 20 kg de peso corporal (equivalente a 25 mg de dipirona por kg)"
+  },
+  {
+    "name": "BIO PEN FORTE 20 MILL",
+    "image": "img/118.webp",
+    "tags": [
+      "Antibióticos"
+    ],
+    "formats": [
+      [
+        80,
+        "100 ML",
+        592.87
+      ]
+    ],
+    "info": "BioPen Forte es un antibiótico de amplio espectro en solución inyectable que combina penicilina G procaína y dihidroestreptomicina, utilizado para tratar infecciones bacterianas como mastitis, abscesos, heridas infectadas, neumonías, metritis y otros procesos infecciosos.",
+    "dosis": "Intramuscular profunda, cada 12 a 24 horas, durante 3 a 5 días continuos. Aplicar 1 a 2 mL por cada 20 kg de peso corporal. Esto equivale a 10 000 a 20 000 UI de penicilina G procaína por cada 20 kg y 12.5 a 25 mg de dihidroestreptomicina por kg,"
+  },
+  {
+    "name": "CATARROL RUMIANTES",
+    "image": "img/128.webp",
+    "tags": [
+      "Antiinflamatorios"
+    ],
+    "formats": [
+      [
+        137,
+        "100 ML",
+        550.55
+      ],
+      [
+        138,
+        "250 ML",
+        1101.1
+      ]
+    ],
+    "info": "Catarrol Rumiantes es una solución inyectable que combina varios activos para un efecto integral: antibacteriano, antiinflamatorio, antihistamínico, antialérgico, antipirético y expectorante. Está indicado para tratar una amplia gama de infecciones y procesos patológicos, incluyendo padecimientos gastrointestinales, septicemias, abscesos, mastitis, metritis y agalactia, así como otros cuadros asociados con inflamación, dolor, fiebre o secreción respiratoria.",
+    "dosis": "Dosis estándar (intramuscular): 1 ml por cada 20 kg de peso vivo. Para enfermedades graves: 1 ml por cada 15 kg de peso vivo."
+  },
+  {
+    "name": "CEFTIBIO RTU",
+    "image": "img/130.webp",
+    "tags": [
+      "Antibióticos"
+    ],
+    "formats": [
+      [
+        142,
+        "100 ML",
+        626.63
+      ],
+      [
+        143,
+        "250 ML",
+        1253.27
+      ]
+    ],
+    "info": "Antibiótico de uso veterinario listo para aplicar, formulado para combatir infecciones bacterianas en animales de producción. Ayuda a controlar enfermedades respiratorias y otros procesos infecciosos, favoreciendo una recuperación rápida. Es una solución confiable para mantener la salud y el desempeño del ganado.",
+    "dosis": "Intramuscular o subcutánea: Porcinos: 1 a 3 ml por cada 50 kilos de peso corporal, cada 24 horas, durante 3 a 5 días, I.M. Rumiantes: 1 a 2 ml por cada 50 kilos de peso corporal, cada 24 horas, durante 3 días, I.M. o S.C."
+  },
+  {
+    "name": "DIPIROTRIL",
+    "image": "img/138.webp",
+    "tags": [
+      "Antiparasitarios"
+    ],
+    "formats": [
+      [
+        176,
+        "25 ML",
+        68.36
+      ],
+      [
+        177,
+        "100 ML",
+        188.34
+      ],
+      [
+        178,
+        "250 ML",
+        376.69
+      ],
+      [
+        179,
+        "500 ML",
+        602.71
+      ],
+      [
+        408,
+        "50 ML",
+        null
+      ]
+    ],
+    "info": "Dipirotril es un antibacteriano con antiinflamatorio, para tratar infecciones respiratorias, gastrointestinales o de otra índole que representen inflamación, dolor, fiebre y espasmos por bacterias susceptibles a la enrofloxacina.",
+    "dosis": "1 ml por cada 20 kg de peso corporal equivalente a 2.5 mg de enrofloxacina y 14 mg de dipirona sódica por kilo de peso. Caso agudo: 1 ml por cada 10 kg de peso corporal, equivalente a 5 mg de enrofloxacina y 28 mg de dipirona sódica por kg de peso, cada 12 o 24 hrs, de 3 a 5 días continuos."
+  },
+  {
+    "name": "ENROBIO 50",
+    "image": "img/140.webp",
+    "tags": [
+      "Antibióticos"
+    ],
+    "formats": [
+      [
+        182,
+        "25 ML",
+        56.58
+      ],
+      [
+        183,
+        "100 ML",
+        160.5
+      ],
+      [
+        184,
+        "250 ML",
+        321
+      ],
+      [
+        185,
+        "500 ML",
+        513.61
+      ]
+    ],
+    "info": "Enrobio 50 es un antibacteriano inyectable de amplio espectro, formulado para el tratamiento de infeccionesmicrobianas en bovinos, ovinos, caprinos y porcinos. Ayuda a controlar enfermedades respiratorias y digestivas, favoreciendo la recuperación y el bienestar del ganado.",
+    "dosis": "Intramuscular profunda: 1 ml por cada 20 kg de peso corporal"
+  },
+  {
+    "name": "ENROBIO 100",
+    "image": "img/141.webp",
+    "tags": [
+      "Antibióticos"
+    ],
+    "formats": [
+      [
+        186,
+        "25 ML",
+        74.44
+      ],
+      [
+        187,
+        "100 ML",
+        208.45
+      ],
+      [
+        188,
+        "250 ML",
+        416.88
+      ],
+      [
+        411,
+        "10 ML",
+        37.4
+      ]
+    ],
+    "info": "Enrobio 100 se utiliza para el tratamiento de infecciones gastrointestinales, respiratorias y genitourinarias causadas por bacterias y micoplasmas sensibles a la enrofloxacina. Está indicado para su uso en bovinos, caprinos, ovinos  (tanto de engorda como de producción lechera), así como en porcinos.",
+    "dosis": "1 ml. por cada 40 kg de peso corporal. Equivalente a 2.5 mg de enrofloxacina por kilo de peso."
+  },
+  {
+    "name": "FLOR BIO 300",
+    "image": "img/151.webp",
+    "tags": [
+      "Probióticos"
+    ],
+    "formats": [
+      [
+        199,
+        "100 ML",
+        455.4
+      ],
+      [
+        200,
+        "250 ML",
+        910.8
+      ]
+    ],
+    "info": "Medicamento de amplio espectro terapéutico, formulado para tratar procesos infecciosos y respiratorios severos que afectan tanto al sistema respiratorio como a diversos órganos y tejidos. Antibiótico potente, ideal para infecciones de rápida evolución. Analgésico, que disminuye el dolor asociado a inflamación o infección. Expectorante, que favorece la eliminación de moco y la apertura de vías respiratorias.",
+    "dosis": "Intramuscular profunda: Rumiantes: 1 ml por 25 kg de peso vivo, una dosis cada 48 horas por 2 días. Porcinos: 1 ml por 30 kg de peso vivo, una dosis cada 24 horas por 3 días"
+  },
+  {
+    "name": "GENTABIO 100",
+    "image": "img/160.webp",
+    "tags": [
+      "Antibióticos"
+    ],
+    "formats": [
+      [
+        214,
+        "20 ML",
+        78.76
+      ],
+      [
+        215,
+        "100 ML",
+        226.01
+      ],
+      [
+        216,
+        "250 ML",
+        452.03
+      ],
+      [
+        217,
+        "500 ML",
+        723.25
+      ]
+    ],
+    "info": "GentaBio 100 es un antibiótico de amplio espectro del grupo de los aminoglucósidos, formulado para el tratamiento de infecciones causadas por bacterias grampositivas y gramnegativas. Su ingrediente activo ayuda a combatir eficazmente infecciones bacterianas en animales de producción.",
+    "dosis": "Bovinos y porcinos: 1 ml por cada 25 kg de peso corporal, equivalente a 4.5 mg de gentamicina por kg de peso. (Administración según criterio del médico veterinario.)"
+  },
+  {
+    "name": "INVERMEX",
+    "image": "img/21.webp",
+    "tags": [
+      "Antiparasitarios"
+    ],
+    "formats": [
+      [
+        234,
+        "25 ML",
+        85.04
+      ],
+      [
+        235,
+        "100 ML",
+        233.42
+      ],
+      [
+        236,
+        "250 ML",
+        466.84
+      ],
+      [
+        237,
+        "500 ML",
+        745.7
+      ],
+      [
+        456,
+        "50 ML",
+        118.8
+      ],
+      [
+        477,
+        "10 ML",
+        57.2
+      ]
+    ],
+    "info": "Invermex 1% es un desparasitante en solución inyectable indicado para el tratamiento y control de parasitosis gastrointestinales y pulmonares en bovinos y porcinos. Su principio activo, la ivermectina, actúa eficazmente contra nematodos adultos y larvas, así como algunos ectoparásitos, contribuyendo a mejorar la salud y productividad de los animales.",
+    "dosis": "Bovinos: 1 mL por cada 50 kg de peso corporal. Porcinos: 1 mL por cada 33 kg de peso corporal."
+  },
+  {
+    "name": "INVERMEX ADE",
+    "image": "img/23.webp",
+    "tags": [
+      "Antiparasitarios"
+    ],
+    "formats": [
+      [
+        241,
+        "25 ML",
+        177.41
+      ],
+      [
+        242,
+        "100 ML",
+        450.39
+      ],
+      [
+        243,
+        "250 ML",
+        900.79
+      ],
+      [
+        244,
+        "500 ML",
+        1441.25
+      ],
+      [
+        457,
+        "50 ML",
+        125
+      ],
+      [
+        476,
+        "10 ML",
+        100
+      ]
+    ],
+    "info": "Invermex ADE es un endoparasiticida inyectable formulado con ivermectina y enriquecido con vitaminas A, D y E, que fortalecen el sistema inmunológico y mejoran la condición general del animal. Está indicado como desparasitante gastrointestinal y pulmonar en bovinos y porcinos, proporcionando un control eficaz contra nematodos adultos y larvarios, así como algunos ectoparásitos.",
+    "dosis": "Bovinos: 1 mL por cada 50 kg de peso corporal (equivalente a 200 µg de ivermectina por kg de peso corporal). Porcinos: 1 mL por cada 33 kg de peso corporal (equivalente a 300 µg de ivermectina por kg de peso corporal)."
+  },
+  {
+    "name": "INVERMEX B12",
+    "image": "img/25.webp",
+    "tags": [
+      "Antiparasitarios"
+    ],
+    "formats": [
+      [
+        246,
+        "25 ML",
+        116.28
+      ],
+      [
+        247,
+        "100 ML",
+        333.68
+      ],
+      [
+        248,
+        "250 ML",
+        667.35
+      ],
+      [
+        249,
+        "500 ML",
+        1067.79
+      ],
+      [
+        428,
+        "50 ML",
+        null
+      ]
+    ],
+    "info": "Actúa como endectoparasiticida de amplio espectro, eliminando parásitos internos (gastrointestinales, pulmonares, genitourinarios y oculares) y externos (ácaros, garrapatas, piojos, pulgas y larvas de insectos).",
+    "dosis": "por vía subcutánea, 1 ml por cada 50 kg en rumiantes o 33 kg en porcinos."
+  },
+  {
+    "name": "INVERMEX PREMIX FORTE",
+    "image": "img/27.webp",
+    "tags": [
+      "Antiparasitarios"
+    ],
+    "formats": [
+      [
+        258,
+        "25X20 G",
+        861.63
+      ],
+      [
+        435,
+        "1 KG",
+        1320
+      ],
+      [
+        522,
+        "10 KG",
+        5313
+      ],
+      [
+        "258.1",
+        "1X20 G",
+        38.46
+      ]
+    ],
+    "info": "Invermex Premix Forte es un endectoparasiticida en polvo para mezclar en el alimento que contiene 6 mg de Ivermectina por gramo. Se emplea para la prevención, control y tratamiento de parasitosis internas (gastrointestinales, pulmonares, genitourinarias y oculares) y externas",
+    "dosis": "Contenido de sobre: 120 mg de Ivermectina y 600 mg de Fenbendazol"
+  },
+  {
+    "name": "INVERSOL ADE PASTA FORTE",
+    "image": "img/33.webp",
+    "tags": [
+      "Antiparasitarios"
+    ],
+    "formats": [
+      [
+        263,
+        "12 ML",
+        149.6
+      ]
+    ],
+    "info": "es un endectoparasiticida de amplio espectro, presentado en formato de pasta oral, que combina diferentes principios activos + vitaminas, diseñado para animales (especialmente equinos) para combatir parásitos internos y externos, y además reforzar el estado nutricional con vitaminas A, D y E.",
+    "dosis": "Oral; 1 ml por cada 50 kilos de peso corporal, equivalente a 10 mg de fenbendazol, 0.2 mg de ivermectina y 1 mg de prazicuantel por kilo de peso"
+  },
+  {
+    "name": "LAMICIL 100/FORTE",
+    "image": "img/167.webp",
+    "tags": [
+      "Antifúngicos"
+    ],
+    "formats": [
+      [
+        272,
+        "10 ML",
+        35.73
+      ],
+      [
+        273,
+        "20 ML",
+        59.55
+      ],
+      [
+        274,
+        "100 ML",
+        160.09
+      ],
+      [
+        275,
+        "250 ML",
+        320.18
+      ],
+      [
+        276,
+        "500 ML",
+        491.34
+      ]
+    ],
+    "info": "Lamicil 100 es un antibiótico de amplio espectro indicado para el tratamiento de enfermedades respiratorias, gastrointestinales, genitourinarias, entre otras infecciones causadas por bacterias sensibles a la oxitetraciclina.",
+    "dosis": "Bovino, caprino, ovino y porcino: 1 ml por cada 10 a 20 kg de peso corporal. Equivalente a 10 a 5 mg de oxitetraciclina por kg de peso. Cada 24 horas"
+  },
+  {
+    "name": "LAMICIL 200/LA",
+    "image": "img/168.jpg",
+    "tags": [
+      "Antifúngicos"
+    ],
+    "formats": [
+      [
+        406,
+        "500 ML",
+        771.1
+      ],
+      [
+        424,
+        "100 ML",
+        262.9
+      ],
+      [
+        468,
+        "250 ML",
+        473
+      ],
+      [
+        575,
+        "20 ML",
+        80
+      ]
+    ],
+    "info": "Lamicil 200 es un antibiótico de amplio espectro indicado para el tratamiento de enfermedades causadas por gérmenes susceptibles a la oxitetraciclina, incluyendo infecciones respiratorias, digestivas y sistémicas en animales de producción",
+    "dosis": "Ovinos, caprinos y porcinos: 1 ml por cada 10 kg de peso corporal. Equivalente a 20 mg/kg p.v. Lechones (menores a 2 kg de peso corporal): Aplicar no más de 0.5 ml"
+  },
+  {
+    "name": "LAMICIL 50/LIQUIDA",
+    "image": "img/166.webp",
+    "tags": [
+      "Antifúngicos"
+    ],
+    "formats": [
+      [
+        421,
+        "100 ML",
+        155.1
+      ]
+    ],
+    "info": "Lamicil 50 es un antibiótico de amplio espectro indicado para el tratamiento de enfermedades infecciosas causadas por bacterias susceptibles a la oxitetraciclina, eficaz en procesos respiratorios, digestivos y sistémicos.",
+    "dosis": "Bovino, equino, ovino y porcino: 1 ml por cada 10 kg de peso corporal. Equivalente a 5 mg/kg p.v. Canino y felino: 1 ml por cada 5 kg de peso corporal. Equivalente a 10 mg/kg p.v. Aves: 0.5 ml por cada 1 kg de peso corporal. Equivalente a 25 mg/kg p.v."
+  },
+  {
+    "name": "MASTI BIO FORTE",
+    "image": "img/170.webp",
+    "tags": [
+      "Antibióticos"
+    ],
+    "formats": [
+      [
+        282,
+        "12X10 ML",
+        640.88
+      ]
+    ],
+    "info": "Mastibio Forte es un producto veterinario formulado para apoyar el manejo de problemas relacionados con la salud de la ubre, ayudando a controlar infecciones bacterianas que afectan la producción lechera. Favorece la recuperación del tejido mamario y contribuye al bienestar general del animal, manteniendo la calidad y rendimiento de la leche. Su uso se integra dentro de los programas de salud y prevención recomendados por médicos veterinarios.",
+    "dosis": "Terapéutica: Bovinos: 10 ml por cuarto afectado. Ovi-caprinos: 5 ml por cuarto afectado. Cada 12 a 24 horas, 3 aplicaciones como máximo."
+  },
+  {
+    "name": "MUCOTRYL 100 IM",
+    "image": "img/174.webp",
+    "tags": [
+      "Mucoliticos"
+    ],
+    "formats": [
+      [
+        290,
+        "10 ML",
+        77.68
+      ],
+      [
+        291,
+        "100 ML",
+        341.8
+      ],
+      [
+        292,
+        "250 ML",
+        714.67
+      ]
+    ],
+    "info": "Mucotryl 100 IN es un antimicrobiano de amplio espectro,  combinado con mucolíticoas expectorantes; para el tratamiento de enfermedades respiratorias en bovinos y prcinos, por bacterias susceptibles a la fórmula (enrofloxacina), que ocasionan neumonía, bronconeumonía, bronquitis, laringitis u otras enfermedades respiratorias agudas o crónicas con secreciones mucosas.",
+    "dosis": "Dosis intravenosa: 1 a 2 ml por cada 40 kg de peso corporal, equivalente de 2.5 a 5 mg de enrofloxacina y 0.25 a 0.5 mg de ambroxol por cada kg de peso, durante 3 a 5 días."
+  },
+  {
+    "name": "NEUMO ESPECTOL",
+    "image": "img/176.webp",
+    "tags": [
+      "Respiratorio"
+    ],
+    "formats": [
+      [
+        297,
+        "25X20 G",
+        704.96
+      ],
+      [
+        422,
+        "1 KG",
+        1078
+      ],
+      [
+        471,
+        "100 GRS",
+        null
+      ],
+      [
+        473,
+        "10 KG",
+        5280
+      ],
+      [
+        "297.1",
+        "1X20 G",
+        35.61
+      ]
+    ],
+    "info": "NeumoEspectol es un antimicrobiano veterinario especializado en enfermedades respiratorias del ganado, eficaz contra patógenos bacterianos comunes del sistema pulmonar. Reduce signos clínicos y favorece la función respiratoria, optimizando el rendimiento productivo del animal.",
+    "dosis": "Oral, disuelto en agua de bebida o mezclado en alimento. Aves: Disolver de 1 a 1.5 gr de por cada litro de agua. Mezclar de 1 a 2.5 gr de por cada kilo de alimento. Porcino, lechón: Disolver de 1 3.5 gr de por cada litro de agua de bebida. Mezclar de 4 a 6 gr de por cada kilo de alimento. Bovino, becerro, ternero, cabrito, cordero: Disolver en agua o mezclar en alimento, 10 gr de por cada 50 kilos de peso corporal."
+  },
+  {
+    "name": "OXITETRACLOR ANTIDIARREICO",
+    "image": "img/179.webp",
+    "tags": [
+      "Antidiarreicos"
+    ],
+    "formats": [
+      [
+        302,
+        "12X30 ML",
+        512.28
+      ],
+      [
+        "302.1",
+        "1X30 ML",
+        49.85
+      ]
+    ],
+    "info": "Antibacteriano veterinario de amplio espectro basado en oxitetraciclina para el control de infecciones bacterianas en ganado. Actúa sobre patógenos sensibles a tetraciclinas, ayudando a restablecer la función orgánica y el desempeño productivo del animal.",
+    "dosis": "Oral diluido en agua de bebida o toma directa: Aves de 100 a 500 ppm/kilo de peso. Bovinos y porcinos 22 mg/kilo de peso"
+  },
+  {
+    "name": "OXITETRACLOR ANTIDIARREICO AVES",
+    "image": "img/180.webp",
+    "tags": [
+      "Antidiarreicos"
+    ],
+    "formats": [
+      [
+        303,
+        "12X30 ML",
+        512.28
+      ],
+      [
+        "303.1",
+        "1X30 ML",
+        49.85
+      ]
+    ],
+    "info": "Oxitetraclor Antidiarreico para Aves, es un tónico natural vitaminado, para aves de ornato y competencia, sanas y fuertes, contra de bacterias grampositivas, gramnegativas y micoplasmas.",
+    "dosis": "Oral diluido: Agregar 10 gotas al agua de bebida diariamente, durante 3 a 5 días. Consultar al médico Veterinario."
+  },
+  {
+    "name": "TRIBENZATIL 1 Mill AVIAR",
+    "format": [
+      {
+        "unit": "50 ML",
+        "price": 187.0,
+        "code": "518"
+      }
+    ],
+    "image": "img/188.webp",
+    "tags": [
+      "Antiparasitarios"
+    ]
+  },
+  {
+    "name": "TRIBENZATIL 2 Mill AVIAR",
+    "format": [
+      {
+        "unit": "100 ML",
+        "price": 330.0,
+        "code": "519"
+      }
+    ],
+    "image": "img/189.webp",
+    "tags": [
+      "Antiparasitarios"
+    ]
+  },
+  {
+    "name": "TRIBENZATIL 12 Mill",
+    "format": [
+      {
+        "unit": "12 Mill",
+        "price": 288.24,
+        "code": "338"
+      }
+    ],
+    "image": "img/empty.svg",
+    "tags": [
+      "Antiparasitarios"
+    ]
+  },
+  {
+    "name": "TRIBENZATIL 4 Mill",
+    "format": [
+      {
+        "unit": "4 Mill",
+        "price": 0.0,
+        "code": "537"
+      }
+    ],
+    "image": "img/empty.svg",
+    "tags": [
+      "Antiparasitarios"
+    ]
+  },
+  {
+    "name": "TRIBENZATIL 6 Mill",
+    "format": [
+      {
+        "unit": "6 Mill",
+        "price": 150.68,
+        "code": "337"
+      }
+    ],
+    "image": "img/192.webp",
+    "tags": [
+      "Antiparasitarios"
+    ]
+  },
+  {
+    "name": "TRIBENZATIL 50 Mill",
+    "format": [
+      {
+        "unit": "50 Mill",
+        "price": 858.0,
+        "code": "339"
+      }
+    ],
+    "image": "img/193.webp",
+    "tags": [
+      "Antiparasitarios"
+    ]
+  },
+  {
+    "name": "TRIBENZATIL 1/2 Mill PUPPY",
+    "format": [
+      {
+        "unit": "1/2 Mill",
+        "price": 85.16,
+        "code": "340"
+      }
+    ],
+    "image": "img/190.webp",
+    "tags": [
+      "Antiparasitarios"
+    ]
+  },
+  {
+    "name": "TRIBENZATIL 1 Mill PUPPY",
+    "format": [
+      {
+        "unit": "1 Mill",
+        "price": 129.62,
+        "code": "490"
+      }
+    ],
+    "image": "img/191.webp",
+    "tags": [
+      "Antiparasitarios"
+    ]
+  },
+  {
+    "name": "TRIBENZATIL 1/2 Mill AVIAR",
+    "format": [
+      {
+        "unit": "25 ML",
+        "price": 94.0,
+        "code": "341"
+      }
+    ],
+    "image": "img/187.webp",
+    "tags": [
+      "Antiparasitarios"
+    ]
+  },
+  {
+    "name": "TYLOBIO 200",
+    "image": "img/194.webp",
+    "tags": [
+      "Antibióticos"
+    ],
+    "formats": [
+      [
+        344,
+        "20 ML",
+        113.93
+      ],
+      [
+        345,
+        "100 ML",
+        273.96
+      ],
+      [
+        346,
+        "250 ML",
+        547.92
+      ],
+      [
+        504,
+        "500 ML",
+        1089
+      ]
+    ],
+    "info": "TyloBio 200 es un antibiótico bacteriostático perteneciente al grupo de los macrólidos, formulado como solución inyectable para uso en animales domésticos y de producción. Su ingrediente activo, la tilosina, es especialmente eficaz frente a microorganismos Gram positivos, ciertos Gram negativos y Mycoplasma spp., causantes de una amplia variedad de enfermedades infecciosas.",
+    "dosis": "Bovinos y porcinos: 1 a 2 ml por cada 20 kilos de peso corporal, equivalente a 10 y 20 mg por kilo de peso, cada 24 horas"
+  },
+  {
+    "name": "VITAMINA ADE",
+    "image": "img/92.webp",
+    "tags": [
+      "Vitaminas"
+    ],
+    "formats": [
+      [
+        363,
+        "20 ML",
+        94.99
+      ],
+      [
+        364,
+        "100 ML",
+        272.59
+      ],
+      [
+        365,
+        "250 ML",
+        545.18
+      ],
+      [
+        366,
+        "500 ML",
+        871.02
+      ],
+      [
+        502,
+        "50 ML",
+        140
+      ]
+    ],
+    "info": "Combina las vitaminas A, D y E, esencial para mantener la salud general, el crecimiento y el rendimiento de los animales. Ayuda a fortalecer huesos, músculos y sistema inmunológico, mejora el apetito y contribuye a una mayor vitalidad",
+    "dosis": "Intramuscular profunda: Bovinos: 4 a 6 ml. Caprinos, ovinos, porcinos: 2 a 3 ml."
+  }
+]
