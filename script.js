@@ -1,16 +1,20 @@
 angular.module('miApp', ['ngMaterial'])
     .controller('CarruselController', function ($scope, $timeout, $interval, $http) {
         $scope.images = [
-            'images/marino-bobetic-unsplash.jpg',
-            'images/christina-maiia-unsplash.jpg',
             'images/daniel-quiceno-m-unsplash.jpg',
-            'images/gilles-detot-unsplash.jpg'
+            'images/gilles-detot-unsplash.jpg',
+            'images/komorebi-photo-unsplash.jpg',
+            'images/elisa-stone-unsplash.jpg',
+            'images/abdul-rehman-khalid-unsplash.jpg',
+            'images/b-cole-unsplash.jpg'
         ];
         $scope.webp_img = [
-            'images/marino-bobetic-unsplash.webp',
-            'images/christina-maiia-unsplash.webp',
             'images/daniel-quiceno-m-unsplash.webp',
-            'images/gilles-detot-unsplash.webp'
+            'images/gilles-detot-unsplash.webp',
+            'images/komorebi-photo-unsplash.webp',
+            'images/elisa-stone-unsplash.webp',
+            'images/abdul-rehman-khalid-unsplash.webp',
+            'images/b-cole-unsplash.webp'
         ];
         $scope.promos = [];
         $http.get('promos/item-code-promos.json').then(function (resp) {
