@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="miApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Biofarmex Bodega</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="CatalogController" ng-cloak>
+    <header class="cabecera">
+        <div class="logo">
+            <img src="logo.webp" alt="Logo">
+            <span class="logo-text">Biofarmex Bodega</span>
+        </div>
+        <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="promos.html">Promociones</a>
+            <a href="catalog.html" class="active-link">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="catalog-page">
+        <section class="catalog-intro">
+            <h1>Catálogo de productos</h1>
+            <p>Explora nuestro catálogo completo de medicamentos, suplementos y soluciones veterinarias.</p>
+        </section>
+
+        <section class="catalog-actions">
+            <div class="tag-list">
+                <button ng-class="{'active-filter': filterTag === ''}" ng-click="filterTag = ''">Todos</button>
+                <button ng-repeat="tag in tags track by tag" ng-class="{'active-filter': filterTag === tag}" ng-click="filterTag = tag">{{tag}}</button>
+            </div>
+            <div class="catalog-summary">
+                <span>{{filteredItems().length}} productos</span>
+            </div>
+        </section>
+
+        <section class="catalog-grid">
+            <article class="catalog-card" ng-repeat="item in filteredItems() track by item.name">
+                <div class="card-image">
+                    <img ng-src="{{item.image}}" alt="{{item.name}}">
+                </div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <span class="tag-pill" ng-repeat="tag in item.tags">{{tag}}</span>
+                        <h2>{{item.name}}</h2>
+                    </div>
+                    <p class="card-info">{{item.info || 'Descripción no disponible.'}}</p>
+                    <p class="card-dosis" ng-if="item.dosis"><strong>Dosis:</strong> {{item.dosis}}</p>
+                    <div class="formats-section">
+                        <h3>Presentaciones</h3>
+                        <table class="formats-table">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Formato</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="format in item.formats">
+                                    <td>{{format[0]}}</td>
+                                    <td>{{format[1]}}</td>
+                                    <td>{{format[2] !== null ? ('$' + (format[2] | number:2)) : 'Consultar'}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <div class="empty-state" ng-if="catalog.length === 0">
+            Cargando catálogo...
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <nav class="nav-footer">
+            <a href="index.html">Inicio</a>
+            <a href="promos.html">Promociones</a>
+            <a href="catalog.html">Catálogo</a>
+        </nav>
+        <p>© 2026 Biofarmex Bodega. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

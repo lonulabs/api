@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="miApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones - Biofarmex Bodega</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="PromosController" ng-cloak>
+    <header class="cabecera">
+        <div class="logo">
+            <img src="logo.webp" alt="Logo">
+            <span class="logo-text">Biofarmex Bodega</span>
+        </div>
+        <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="promos.html" class="active-link">Promociones</a>
+            <a href="catalog.html">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="promo-page">
+        <section class="promo-intro">
+            <h1>Promociones disponibles</h1>
+        </section>
+
+        <div class="promos-layout">
+            <aside class="promo-preview" ng-if="activePromo">
+                <div class="preview-card">
+                    <div class="preview-image">
+                        <img ng-src="{{getPromoImageUrl(activeIndex + 1)}}" alt="{{activePromo.name}}">
+                    </div>
+                    <div class="preview-info">
+                        <span class="preview-unit">{{activePromo.unit}}</span>
+                        <h2>{{activePromo.name}}</h2>
+                        <p class="preview-code">Código: {{activePromo.code}}</p>
+                        <p class="preview-description">Precio especial por tiempo limitado. Aprovecha esta promoción exclusiva.</p>
+                        <div class="preview-price">${{activePromo.price | number:2}}</div>
+                        <button class="btn-primary" type="button">Solicitar ahora</button>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="promo-grid">
+                <div class="grid-header">
+                    <h2>Catálogo de promociones</h2>
+                    <p>{{promos.length}} promociones activas</p>
+                </div>
+                <div class="grid-list">
+                    <article class="promo-card grid-card" ng-repeat="promo in promos track by promo.code"
+                             ng-mouseenter="setActivePromo(promo, $index)"
+                             ng-click="selectPromo(promo, $index)"
+                             ng-class="{'active': activeIndex === $index}">
+                        <img ng-src="{{getPromoImageUrl($index + 1)}}" alt="{{promo.name}}">
+                        <div class="promo-card-body">
+                            <p class="promo-label">{{promo.unit}}</p>
+                            <h4>{{promo.name}}</h4>
+                            <p class="promo-price">${{promo.price | number:2}}</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>© 2026 Biofarmex Bodega. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
