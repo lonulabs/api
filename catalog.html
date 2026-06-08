@@ -30,12 +30,8 @@
         </section>
 
         <section class="catalog-actions">
-            <div class="tag-list">
-                <button ng-class="{'active-filter': filterTag === ''}" ng-click="filterTag = ''">Todos</button>
-                <button ng-repeat="tag in tags track by tag" ng-class="{'active-filter': filterTag === tag}" ng-click="filterTag = tag">{{tag}}</button>
-            </div>
-            <div class="catalog-summary">
-                <span>{{filteredItems().length}} productos</span>
+            <div class="catalog-search">
+                <input id="catalogSearch" type="text" ng-model="searchQuery" placeholder="Buscar por nombre o fórmula..." class="filter-input">
             </div>
         </section>
 
@@ -91,6 +87,9 @@
             </article>
         </section>
 
+        <div class="empty-state" ng-if="catalog.length > 0 && filteredItems().length === 0">
+            No se encontraron productos con ese nombre o fórmula.
+        </div>
         <div class="empty-state" ng-if="catalog.length === 0">
             Cargando catálogo...
         </div>
