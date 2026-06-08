@@ -23,7 +23,7 @@
 .carousel-viewport {
     overflow: hidden;
     width: 100%;
-    max-height: 320px;
+    max-height: 520px;
 }
 
 .carousel-track {
@@ -35,8 +35,7 @@
 .imagen-carrusel-slide {
     flex: 0 0 100%;
     width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
+    height: 520px;
     object-fit: cover;
     display: block;
 }
