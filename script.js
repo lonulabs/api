@@ -103,6 +103,7 @@ angular.module('miApp', ['ngMaterial'])
         $scope.catalog = [];
         $scope.tags = [];
         $scope.filterTag = '';
+        $scope.searchQuery = '';
 
         function updateTags(items) {
             const tagSet = new Set();
@@ -117,7 +118,15 @@ angular.module('miApp', ['ngMaterial'])
         }
 
         $scope.filterItem = function (item) {
-            return !$scope.filterTag || (item.tags && item.tags.indexOf($scope.filterTag) !== -1);
+            const query = ($scope.searchQuery || '').toLowerCase().trim();
+            const matchesSearch = !query ||
+                item.name.toLowerCase().indexOf(query) !== -1 ||
+                (item.formula && Array.isArray(item.formula.rows) && item.formula.rows.some(function (row) {
+                    const name = row[0] ? String(row[0]).toLowerCase() : '';
+                    const amount = row[1] ? String(row[1]).toLowerCase() : '';
+                    return name.indexOf(query) !== -1 || amount.indexOf(query) !== -1;
+                }));
+            return matchesSearch && (!$scope.filterTag || (item.tags && item.tags.indexOf($scope.filterTag) !== -1));
         };
 
         $scope.filteredItems = function () {
