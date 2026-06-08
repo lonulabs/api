@@ -1,4 +1,63 @@
 angular.module('miApp', ['ngMaterial'])
+    .run(function ($rootScope) {
+        $rootScope.cartItems = [];
+
+        function updateCartLine(line) {
+            line.total = parseFloat(line.price) * line.quantity;
+        }
+
+        $rootScope.cartItemCount = function () {
+            return $rootScope.cartItems.reduce(function (sum, line) {
+                return sum + line.quantity;
+            }, 0);
+        };
+
+        $rootScope.cartTotal = function () {
+            return $rootScope.cartItems.reduce(function (sum, line) {
+                return sum + line.total;
+            }, 0);
+        };
+
+        $rootScope.addToCart = function (item, format, options) {
+            options = options || {};
+            if (!format) {
+                return;
+            }
+
+            var id = item.name + '|' + format[1] + (options.promo ? '|promo' : '');
+            var price = format[2] != null ? parseFloat(format[2]) : 0;
+            var line = $rootScope.cartItems.find(function (existing) {
+                return existing.id === id;
+            });
+
+            if (line) {
+                line.quantity += 1;
+                updateCartLine(line);
+            } else {
+                $rootScope.cartItems.push({
+                    id: id,
+                    name: item.name,
+                    format: format[1],
+                    price: price,
+                    quantity: 1,
+                    total: price,
+                    promo: !!options.promo,
+                    code: String(options.code || format[0])
+                });
+            }
+        };
+
+        $rootScope.isInCart = function (item, format, options) {
+            if (!format) {
+                return false;
+            }
+            options = options || {};
+            var id = item.name + '|' + format[1] + (options.promo ? '|promo' : '');
+            return $rootScope.cartItems.some(function (line) {
+                return line.id === id;
+            });
+        };
+    })
     .controller('CarruselController', function ($scope, $timeout, $interval, $http) {
         $scope.images = [
             'images/daniel-quiceno-m-unsplash.jpg',
@@ -70,10 +129,15 @@ angular.module('miApp', ['ngMaterial'])
             window.removeEventListener('resize', updateImageSet);
         });
     })
-    .controller('PromosController', function ($scope, $http) {
+    .controller('PromosController', function ($scope, $http, $rootScope) {
         $scope.promos = [];
         $scope.activePromo = null;
         $scope.activeIndex = 0;
+        $scope.catalog = [];
+        $scope.cartItems = $rootScope.cartItems;
+        $scope.cartOpen = false;
+        $scope.cartItemCount = $rootScope.cartItemCount;
+        $scope.cartTotal = $rootScope.cartTotal;
 
         $http.get('promos/item-code-promos.json').then(function (resp) {
             $scope.promos = resp.data || [];
@@ -83,6 +147,12 @@ angular.module('miApp', ['ngMaterial'])
             }
         }, function () {
             $scope.promos = [];
+        });
+
+        $http.get('catalog/catalog.json').then(function (resp) {
+            $scope.catalog = resp.data || [];
+        }, function () {
+            $scope.catalog = [];
         });
 
         $scope.getPromoImageUrl = function (index) {
@@ -98,12 +168,89 @@ angular.module('miApp', ['ngMaterial'])
         $scope.selectPromo = function (promo, index) {
             $scope.setActivePromo(promo, index);
         };
+
+        $scope.addPromoToCart = function (promo) {
+            if (!$scope.catalog.length || !promo || !promo.code) {
+                return;
+            }
+            var code = String(promo.code);
+            var found = null;
+            $scope.catalog.some(function (item) {
+                return (item.formats || []).some(function (format) {
+                    if (String(format[0]) === code) {
+                        found = {
+                            item: item,
+                            format: format
+                        };
+                        return true;
+                    }
+                    return false;
+                });
+            });
+
+            if (found) {
+                $rootScope.addToCart(found.item, found.format, { promo: true, code: code });
+            } else {
+                $rootScope.addToCart({ name: promo.name }, [promo.code, promo.unit, promo.price], { promo: true, code: code });
+            }
+        };
+
+        function updateCartLine(line) {
+            line.total = parseFloat(line.price) * line.quantity;
+        }
+
+        $scope.increaseQty = function (line) {
+            line.quantity += 1;
+            updateCartLine(line);
+        };
+
+        $scope.decreaseQty = function (line) {
+            if (line.quantity <= 1) {
+                $rootScope.cartItems = $scope.cartItems.filter(function (existing) {
+                    return existing.id !== line.id;
+                });
+                $scope.cartItems = $rootScope.cartItems;
+            } else {
+                line.quantity -= 1;
+                updateCartLine(line);
+            }
+        };
+
+        $scope.clearCart = function () {
+            $rootScope.cartItems = [];
+            $scope.cartItems = $rootScope.cartItems;
+        };
+
+        $scope.toggleCart = function () {
+            $scope.cartOpen = !$scope.cartOpen;
+        };
+
+        $scope.sendCartToWhatsApp = function () {
+            if (!$scope.cartItems.length) {
+                return;
+            }
+            var phone = '525617524444';
+            var lines = ['Hola, quiero realizar una compra de Biofarmex Bodega:'];
+            $scope.cartItems.forEach(function (lineItem, index) {
+                lines.push((index + 1) + '. ' + lineItem.name + ' | ' + lineItem.format + ' x' + lineItem.quantity + ' = $' + lineItem.total.toFixed(2));
+            });
+            lines.push('Total: $' + $scope.cartTotal().toFixed(2));
+            var text = encodeURIComponent(lines.join('\n'));
+            var url = 'https://api.whatsapp.com/send?phone=' + phone + '&text=' + text;
+            window.open(url, '_blank');
+        };
     })
-    .controller('CatalogController', function ($scope, $http) {
+    .controller('CatalogController', function ($scope, $http, $rootScope) {
         $scope.catalog = [];
         $scope.tags = [];
         $scope.filterTag = '';
         $scope.searchQuery = '';
+        $scope.cartItems = $rootScope.cartItems;
+        $scope.cartOpen = false;
+        $scope.addToCart = $rootScope.addToCart;
+        $scope.isInCart = $rootScope.isInCart;
+        $scope.cartItemCount = $rootScope.cartItemCount;
+        $scope.cartTotal = $rootScope.cartTotal;
 
         function updateTags(items) {
             const tagSet = new Set();
@@ -131,6 +278,45 @@ angular.module('miApp', ['ngMaterial'])
 
         $scope.filteredItems = function () {
             return $scope.catalog.filter($scope.filterItem);
+        };
+
+        $scope.increaseQty = function (line) {
+            line.quantity += 1;
+            updateCartLine(line);
+        };
+
+        $scope.decreaseQty = function (line) {
+            if (line.quantity <= 1) {
+                $scope.cartItems = $scope.cartItems.filter(function (existing) {
+                    return existing.id !== line.id;
+                });
+            } else {
+                line.quantity -= 1;
+                updateCartLine(line);
+            }
+        };
+
+        $scope.clearCart = function () {
+            $scope.cartItems = [];
+        };
+
+        $scope.toggleCart = function () {
+            $scope.cartOpen = !$scope.cartOpen;
+        };
+
+        $scope.sendCartToWhatsApp = function () {
+            if (!$scope.cartItems.length) {
+                return;
+            }
+            var phone = '525617524444';
+            var lines = ['Hola, quiero realizar una compra de Biofarmex Bodega:'];
+            $scope.cartItems.forEach(function (lineItem, index) {
+                lines.push((index + 1) + '. ' + lineItem.name + ' | ' + lineItem.format + ' x' + lineItem.quantity + ' = $' + lineItem.total.toFixed(2));
+            });
+            lines.push('Total: $' + $scope.cartTotal().toFixed(2));
+            var text = encodeURIComponent(lines.join('\n'));
+            var url = 'https://api.whatsapp.com/send?phone=' + phone + '&text=' + text;
+            window.open(url, '_blank');
         };
 
         $http.get('catalog/catalog.json').then(function (resp) {
