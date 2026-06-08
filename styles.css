@@ -1229,6 +1229,7 @@
 
     .nav-principal {
         justify-content: center;
+        gap: 1px !important;
     }
 
     .nav-principal a,
@@ -1266,11 +1267,11 @@
         width: 100%;
         justify-content: center;
         flex-wrap: nowrap;
-        gap: 8px;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         -ms-overflow-style: none;
+        gap: 1px !important;
     }
 
     .nav-principal::-webkit-scrollbar,
@@ -1281,7 +1282,6 @@
     .nav-principal a,
     .nav-footer a {
         font-size: 0.85rem;
-        padding: 6px 6px;
         white-space: nowrap;
     }
 
