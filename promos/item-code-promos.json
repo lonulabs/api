@@ -1,0 +1,86 @@
+[
+  {
+    "code": "202",
+    "name": "FLUMICINA FORTE GALLO",
+    "unit": "12 ML",
+    "price": 75
+  },
+  {
+    "code": "604",
+    "name": "B12/5,500 CURATIVA",
+    "unit": "120 ML",
+    "price": 588
+  },
+  {
+    "code": "29",
+    "name": "B12/5,500",
+    "unit": "10 ML",
+    "price": 65
+  },
+  {
+    "code": "78",
+    "name": "BIO PEN FORTE 1 MILL",
+    "unit": "5 ML",
+    "price": 45
+  },
+  {
+    "code": "165",
+    "name": "DIARRECAN",
+    "unit": "100 ML",
+    "price": 97
+  },
+  {
+    "code": "417",
+    "name": "GLUCOMAX",
+    "unit": "60 TAB",
+    "price": 210
+  },
+  {
+    "code": "278",
+    "name": "LINCO FLOR",
+    "unit": "250 ML",
+    "price": 337
+  },
+  {
+    "code": "449",
+    "name": "MASTER ATP PLUS PREMIUM",
+    "unit": "500 ML",
+    "price": 890
+  },
+  {
+    "code": "343",
+    "name": "TYLMICO FLOR 400",
+    "unit": "250 ML",
+    "price": 805
+  },
+  {
+    "code": "594",
+    "name": "VITAMIN B COMPLEX",
+    "unit": "500 ML",
+    "price": 333
+  },
+  {
+    "code": "127",
+    "name": "CALFORVET ORAL",
+    "unit": "300 ML",
+    "price": 110
+  },
+  {
+    "code": "413",
+    "name": "ECTO MAX FORTE",
+    "unit": "1 L",
+    "price": 435
+  },
+  {
+    "code": "252",
+    "name": "INVERMEX F",
+    "unit": "250 ML",
+    "price": 616
+  },
+  {
+    "code": "406",
+    "name": "LAMICIL 200/LA",
+    "unit": "500 ML",
+    "price": 347
+  }
+]
