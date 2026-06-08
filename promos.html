@@ -70,13 +70,14 @@
             <h1>Promociones disponibles</h1>
         </section>
 
-        <div class="promos-layout">
+        <div class="promos-layout" ng-class="{'mobile-preview-open': mobilePreviewOpen}">
             <aside class="promo-preview" ng-if="activePromo">
                 <div class="preview-card">
                     <div class="preview-image">
                         <img ng-src="{{getPromoImageUrl(activeIndex + 1)}}" alt="{{activePromo.name}}">
                     </div>
                     <div class="preview-info">
+                        <button class="preview-close-btn" type="button" ng-click="closeMobilePreview()" aria-label="Cerrar vista previa">✕</button>
                         <span class="preview-unit">{{activePromo.unit}}</span>
                         <h2>{{activePromo.name}}</h2>
                         <p class="preview-code">Código: {{activePromo.code}}</p>
