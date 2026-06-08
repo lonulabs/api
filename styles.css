@@ -979,6 +979,10 @@
     .preview-image {
         min-height: 220px;
     }
+
+    .promo-preview {
+        display: none;
+    }
 }
 
 .promo-nav {
