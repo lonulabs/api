@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Biofarmex Bodega</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .nosotros-hero {
+            background: linear-gradient(135deg, #284abd 0%, #1e3a8a 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .nosotros-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .nosotros-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .nosotros-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .video-section {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+
+        .video-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #284abd;
+            font-weight: 700;
+        }
+
+        .video-embed {
+            margin-bottom: 40px;
+        }
+
+        .video-embed iframe {
+            width: 100%;
+            max-width: 880px;
+            height: 480px;
+            border: 0;
+            display: block;
+            margin: 0 auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(40, 74, 189, 0.2);
+        }
+
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .mission-vision-card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid #284abd;
+            transition: all 0.3s ease;
+        }
+
+        .mission-vision-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(40, 74, 189, 0.15);
+        }
+
+        .mission-vision-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #284abd;
+            font-weight: 700;
+        }
+
+        .mission-vision-card p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .values-section {
+            background: #f8f9fa;
+            padding: 60px 20px;
+            margin-bottom: 80px;
+            border-radius: 12px;
+        }
+
+        .values-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #284abd;
+            font-weight: 700;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .value-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(40, 74, 189, 0.15);
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .value-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #284abd;
+            font-weight: 600;
+        }
+
+        .value-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .quality-section {
+            margin-bottom: 80px;
+        }
+
+        .quality-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #284abd;
+            font-weight: 700;
+        }
+
+        .quality-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .quality-item {
+            background: linear-gradient(135deg, #284abd 0%, #1e3a8a 100%);
+            color: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(40, 74, 189, 0.2);
+        }
+
+        .quality-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .quality-item p {
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #284abd 0%, #1e3a8a 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #00ff00;
+            color: #284abd;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .nosotros-hero h1 {
+                font-size: 2rem;
+            }
+
+            .mission-vision-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-embed iframe {
+                height: 300px;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="logo">
+            <img src="logo.webp" alt="Logo">
+            <span class="logo-text">Biofarmex Bodega</span>
+        </div>
+        <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html" class="active-link">Nosotros</a>
+            <a href="promos.html">Promociones</a>
+            <a href="catalog.html">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="catalog-page">
+        <section class="nosotros-hero">
+            <h1>Biofarmex Bodega</h1>
+            <p>Líderes en innovación y calidad en la industria farmacéutica veterinaria con más de años de experiencia y compromiso con la excelencia</p>
+        </section>
+
+        <div class="nosotros-content">
+            <section class="video-section">
+                <h2>¿Quiénes Somos?</h2>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/gEUXs5niUes" title="BIOFARMEX ¿Quienes Somos?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <section class="mission-vision-grid">
+                <div class="mission-vision-card">
+                    <h3>🎯 Misión</h3>
+                    <p>Somos una empresa nacional con proyección internacional, contando con capital totalmente mexicano, comprometidos en la productividad y sustentabilidad del sector veterinario, fabricando productos de alta calidad en bienestar de los animales.</p>
+                </div>
+
+                <div class="mission-vision-card">
+                    <h3>🚀 Visión</h3>
+                    <p>Ser una empresa comprometida con la excelencia, la innovación y el liderazgo en la industria farmacéutica veterinaria, proporcionando soluciones confiables que mejoren la salud y productividad animal.</p>
+                </div>
+            </section>
+
+            <section class="values-section">
+                <h2>Nuestros Valores</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">✓</div>
+                        <h4>Calidad</h4>
+                        <p>Excelencia en cada producto que fabricamos, garantizando los más altos estándares internacionales.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">💡</div>
+                        <h4>Innovación</h4>
+                        <p>Investigación y desarrollo continuo para ofrecer soluciones veterinarias de vanguardia.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h4>Confianza</h4>
+                        <p>Relaciones transparentes y duraderas con nuestros clientes y partners comerciales.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">🌱</div>
+                        <h4>Sostenibilidad</h4>
+                        <p>Compromiso con prácticas amigables con el medio ambiente y el bienestar animal.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">⚡</div>
+                        <h4>Eficiencia</h4>
+                        <p>Procesos optimizados que garantizan entregas rápidas y precisas de nuestros productos.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">🏆</div>
+                        <h4>Excelencia</h4>
+                        <p>Dedicación total a superar expectativas en cada aspecto de nuestro negocio.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quality-section">
+                <h2>Nuestro Compromiso con la Calidad</h2>
+                <div class="quality-grid">
+                    <div class="quality-item">
+                        <h4>Laboratorios Certificados</h4>
+                        <p>Contamos con instalaciones modernas y certificadas que cumplen con los más rigurosos estándares internacionales de fabricación y calidad.</p>
+                    </div>
+
+                    <div class="quality-item">
+                        <h4>Investigación y Desarrollo</h4>
+                        <p>Invertimos continuamente en investigación para desarrollar productos innovadores que respondan a las necesidades del mercado veterinario.</p>
+                    </div>
+
+                    <div class="quality-item">
+                        <h4>Control de Calidad</h4>
+                        <p>Cada lote de producción es sometido a rigurosos controles de calidad para garantizar pureza, potencia y seguridad.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>¿Listo para optimizar la salud de tu ganadería?</h2>
+                <p>Descubre nuestro completo catálogo de productos farmacéuticos veterinarios de calidad premium</p>
+                <a href="catalog.html" class="cta-button">Ver Catálogo de Productos</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <nav class="nav-footer">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html" class="active-link">Nosotros</a>
+            <a href="promos.html">Promociones</a>
+            <a href="catalog.html">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <p>© 2026 Biofarmex Bodega. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Go to Top Button -->
+    <button id="goToTopBtn" class="go-to-top-btn" aria-label="Ir al inicio">↑</button>
+
+    <script src="script.js"></script>
+    <script src="go-to-top.js"></script>
+</body>
+</html>
