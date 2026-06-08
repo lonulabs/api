@@ -5,11 +5,11 @@
 /* Estilos para el contenedor del carrusel */
 .contenedor-carrusel {
     position: relative;
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
+    width: 100vw;
+    max-width: none;
+    margin: 20px calc(50% - 50vw);
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 /* Estilo de la imagen activa */
@@ -173,8 +173,36 @@
     align-items: center;
     gap: 16px;
     flex-wrap: wrap;
-    max-width: 980px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto 20px;
+    position: sticky;
+    top: 80px;
+    z-index: 15;
+    background: #f7f9ff;
+    padding: 16px 0;
+}
+
+.catalog-search {
+    flex: 1 1 100%;
+    max-width: 560px;
+}
+
+.filter-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid rgba(35, 79, 182, 0.18);
+    border-radius: 16px;
+    background: #fff;
+    color: #102a5b;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-input:focus {
+    outline: none;
+    border-color: #234fb6;
+    box-shadow: 0 0 0 4px rgba(35, 79, 182, 0.08);
 }
 
 .tag-list {
@@ -402,6 +430,12 @@
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
     border: 1px solid rgba(35, 79, 182, 0.1);
     overflow: hidden;
+}
+
+.promo-preview {
+    position: sticky;
+    top: 20px;
+    align-self: start;
 }
 
 .preview-card {
@@ -847,11 +881,13 @@
     }
 
     .contenedor-carrusel {
-        margin: 16px auto;
+        width: 100vw;
+        max-width: none;
+        margin: 16px calc(50% - 50vw);
     }
 
     .carousel-viewport {
-        max-height: 240px;
+        max-height: 280px;
     }
 
     .imagen-carrusel-slide {
