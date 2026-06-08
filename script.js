@@ -160,13 +160,22 @@ angular.module('miApp', ['ngMaterial'])
             return 'promos/p%20(' + index + ').' + ext;
         };
 
+        $scope.mobilePreviewOpen = false;
+
         $scope.setActivePromo = function (promo, index) {
             $scope.activePromo = promo;
             $scope.activeIndex = index;
         };
 
+        $scope.closeMobilePreview = function () {
+            $scope.mobilePreviewOpen = false;
+        };
+
         $scope.selectPromo = function (promo, index) {
             $scope.setActivePromo(promo, index);
+            if (window.innerWidth <= 760) {
+                $scope.mobilePreviewOpen = true;
+            }
         };
 
         $scope.addPromoToCart = function (promo) {

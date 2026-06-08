@@ -28,14 +28,14 @@
 
     <main class="catalog-page">
         <section class="catalog-intro">
-            <h1>Catálogo de productos</h1>
+            <h1>Catálogo</h1>
             <p>Explora nuestro catálogo completo de medicamentos, suplementos y soluciones veterinarias.</p>
         </section>
 
         <section class="catalog-actions">
             <div class="catalog-search">
                 <input id="catalogSearch" type="text" ng-model="searchQuery"
-                    placeholder="Buscar nombre o fórmula..." class="filter-input">
+                    placeholder="Buscar nombre/fórmula..." class="filter-input">
             </div>
             <button class="floating-cart-btn" type="button" ng-click="toggleCart()" aria-label="Abrir carrito">
                 🛒 <span class="cart-badge">{{cartItemCount()}}</span>
