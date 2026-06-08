@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es" ng-app="miApp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo - Biofarmex Bodega</title>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.css">
+    <link rel="stylesheet"
+        href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body ng-controller="CatalogController" ng-cloak>
     <header class="cabecera">
         <div class="logo">
@@ -31,8 +34,12 @@
 
         <section class="catalog-actions">
             <div class="catalog-search">
-                <input id="catalogSearch" type="text" ng-model="searchQuery" placeholder="Buscar por nombre o fórmula..." class="filter-input">
+                <input id="catalogSearch" type="text" ng-model="searchQuery"
+                    placeholder="Buscar nombre o fórmula..." class="filter-input">
             </div>
+            <button class="floating-cart-btn" type="button" ng-click="toggleCart()" aria-label="Abrir carrito">
+                🛒 <span class="cart-badge">{{cartItemCount()}}</span>
+            </button>
         </section>
 
         <div class="cart-backdrop" ng-if="cartOpen" ng-click="toggleCart()"></div>
@@ -63,8 +70,10 @@
                     <strong>${{cartTotal() | number:2}}</strong>
                 </div>
                 <button class="btn-primary btn-checkout" type="button" ng-click="sendCartToWhatsApp()">
-                    <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                        <path fill="currentColor" d="M20.52 3.48A11.74 11.74 0 0012.02 0C5.42 0 .1 5.32.1 11.93c0 2.1.55 4.14 1.6 5.94L0 24l6.32-1.65c1.7.93 3.62 1.42 5.7 1.42h.01c6.59 0 11.92-5.32 11.92-11.93a11.68 11.68 0 00-3.43-8.34zM12.02 21.84c-1.78 0-3.52-.48-5.02-1.38l-.36-.21-3.74.98.99-3.64-.23-.37a9.71 9.71 0 01-1.5-5.59c0-5.35 4.34-9.69 9.68-9.69 2.58 0 5 1.01 6.8 2.84a9.63 9.63 0 012.84 6.82c0 5.35-4.31 9.69-9.69 9.69zm5.28-7.5c-.28-.14-1.64-.81-1.9-.9-.26-.1-.45-.14-.64.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.24-1.38-.83-.74-1.4-1.66-1.57-1.94-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.49-.16 0-.34 0-.52 0-.18 0-.48.07-.73.34-.26.28-1 1-1 2.43 0 1.44 1.03 2.83 1.18 3.03.14.18 2.04 3.1 4.93 4.35.69.3 1.23.48 1.65.62.69.23 1.32.2 1.82.12.56-.09 1.64-.67 1.87-1.31.23-.63.23-1.17.16-1.28-.07-.09-.26-.14-.55-.28z"/>
+                    <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                        focusable="false">
+                        <path fill="currentColor"
+                            d="M20.52 3.48A11.74 11.74 0 0012.02 0C5.42 0 .1 5.32.1 11.93c0 2.1.55 4.14 1.6 5.94L0 24l6.32-1.65c1.7.93 3.62 1.42 5.7 1.42h.01c6.59 0 11.92-5.32 11.92-11.93a11.68 11.68 0 00-3.43-8.34zM12.02 21.84c-1.78 0-3.52-.48-5.02-1.38l-.36-.21-3.74.98.99-3.64-.23-.37a9.71 9.71 0 01-1.5-5.59c0-5.35 4.34-9.69 9.68-9.69 2.58 0 5 1.01 6.8 2.84a9.63 9.63 0 012.84 6.82c0 5.35-4.31 9.69-9.69 9.69zm5.28-7.5c-.28-.14-1.64-.81-1.9-.9-.26-.1-.45-.14-.64.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.24-1.38-.83-.74-1.4-1.66-1.57-1.94-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.49-.16 0-.34 0-.52 0-.18 0-.48.07-.73.34-.26.28-1 1-1 2.43 0 1.44 1.03 2.83 1.18 3.03.14.18 2.04 3.1 4.93 4.35.69.3 1.23.48 1.65.62.69.23 1.32.2 1.82.12.56-.09 1.64-.67 1.87-1.31.23-.63.23-1.17.16-1.28-.07-.09-.26-.14-.55-.28z" />
                     </svg>
                     Finalizar compra
                 </button>
@@ -74,9 +83,7 @@
                 <p>Tu carrito está vacío. Agrega productos para verlos aquí.</p>
             </div>
         </section>
-        <button class="floating-cart-btn" type="button" ng-click="toggleCart()" aria-label="Abrir carrito">
-            🛒 <span class="cart-badge">{{cartItemCount()}}</span>
-        </button>
+
 
         <section class="catalog-grid">
             <article class="catalog-card" ng-repeat="item in filteredItems() track by item.name">
@@ -102,7 +109,8 @@
                             </thead>
                             <tbody>
                                 <tr ng-repeat="format in item.formats">
-                                    <td><button class="btn-cart" type="button" ng-click="addToCart(item, format)" ng-class="{'in-cart': isInCart(item, format)}">+</button></td>
+                                    <td><button class="btn-cart" type="button" ng-click="addToCart(item, format)"
+                                            ng-class="{'in-cart': isInCart(item, format)}">+</button></td>
                                     <td>{{format[1]}}</td>
                                     <td>{{format[2] !== null ? ('$' + (format[2] | number:2)) : 'Consultar'}}</td>
                                 </tr>
@@ -157,5 +165,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.js"></script>
     <script src="script.js"></script>
-    <script src="go-to-top.js"></script>`n</body>
+    <script src="go-to-top.js"></script>`n
+</body>
+
 </html>
