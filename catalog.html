@@ -70,6 +70,23 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="formats-section">
+                        <h3>Formula</h3>
+                        <table class="formats-table">
+                            <thead>
+                                <tr>
+                                    <th>Principio activo</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="principios in item.formula.rows">
+                                    <td>{{principios[0]}}</td>
+                                    <td>{{principios[1]}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </article>
         </section>
