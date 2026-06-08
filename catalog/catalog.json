@@ -2,6 +2,8 @@
   {
     "name": "ALBENDABIO 100",
     "image": "img/1.webp",
+    "info": "AlbendaBio 10% es un desparasitante interno de amplio espectro formulado a base de albendazol, eficaz para el tratamiento y prevención de parásitos gastrointestinales, pulmonares y genitourinarios en animales de producción.",
+    "dosis": "1 a 2 mL por cada 20 kg de peso corporal.",
     "tags": [
       "Desparasitantes"
     ],
@@ -27,8 +29,23 @@
         3478.75
       ]
     ],
-    "info": "AlbendaBio 10% es un desparasitante interno de amplio espectro formulado a base de albendazol, eficaz para el tratamiento y prevención de parásitos gastrointestinales, pulmonares y genitourinarios en animales de producción.",
-    "dosis": "1 a 2 mL por cada 20 kg de peso corporal."
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Albendazol base",
+          "100 mg"
+        ],
+        [
+          "Cobalto Sulfato heptahidratado",
+          "15 mg"
+        ],
+        [
+          "Vehículo c.b.p",
+          "1 ml"
+        ]
+      ]
+    }
   },
   {
     "name": "ALBENDABIO 250 FORTE",
@@ -58,12 +75,39 @@
         4503.93
       ]
     ],
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Albendazol",
+          "250 mg"
+        ],
+        [
+          "Cobalto Sulfato",
+          "15 mg"
+        ],
+        [
+          "Selenio Sódico",
+          "2.5 mg"
+        ],
+        [
+          "Carbonato Zinc",
+          "4.6 mg"
+        ],
+        [
+          "Vehículo c.b.p",
+          "1 ml"
+        ]
+      ]
+    },
     "info": "AlbendaBio 25% Forte es un antihelmíntico y fasciolicida de amplio espectro en suspensión oral, formulado para el tratamiento y control de parásitos gastrointestinales, pulmonares y hepáticos en rumiantes.",
     "dosis": "Administrar 1 mL por cada 25 kg de peso corporal."
   },
   {
     "name": "ANTI ESTRES",
     "image": "img/107.webp",
+    "dosis": "1 kilo de AntiEstrés por cada 2,000 litros de agua de bebida; que corresponden de 10 a 20 mg de dipirona sódica y de 10 a 20 mg de acetaminofen por kilo de peso corporal",
+    "info": "Producto con propiedades analgésicas, antitérmicas y antiespasmódicas, diseñado para normalizar la temperatura corporal y reducir el dolor, así como disminuir el estrés ocasionado por el manejo o situaciones de tensión.",
     "tags": [
       "Suplementos"
     ],
@@ -88,7 +132,24 @@
         "1X20 G",
         28.48
       ]
-    ]
+    ],
+    "formula": {
+      "header": "Por cada 100 grms",
+      "rows": [
+        [
+          "Acetaminofen (Paracetamol)",
+          "140 g"
+        ],
+        [
+          "Dipirona (Metamizol) Sódica",
+          "155 g"
+        ],
+        [
+          "Excipiente, c.b.p.",
+          "1,000"
+        ]
+      ]
+    }
   },
   {
     "name": "B12 5.500",
@@ -129,11 +190,45 @@
       ]
     ],
     "info": "B12/5,500 es un vigorizante y reconstituyente metabólico formulado especialmente para animales sometidos a actividad física intensa. Su alto contenido de vitamina B12 y nutrientes complementarios estimula el metabolismo energético, mejora la oxigenación tisular y favorece la recuperación muscular. Está indicado principalmente para caballos de trabajo o competencia y gallos de pelea, ayudando a optimizar su rendimiento físico, fuerza y resistencia.",
-    "dosis": "Intramuscular; Gallos de Pelea: 0.5 ml. Caballos y bovinos: 5 ml. Porcinos, ovi-caprinos: 0.6 a 1 ml. Caninos y felinos: 0.5 a 1 ml. Repetir la aplicación a los 3 días"
+    "dosis": "Intramuscular; Gallos de Pelea: 0.5 ml. Caballos y bovinos: 5 ml. Porcinos, ovi-caprinos: 0.6 a 1 ml. Caninos y felinos: 0.5 a 1 ml. Repetir la aplicación a los 3 días",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Cianocobalamina",
+          "2,750 mcg"
+        ],
+        [
+          "Hidroxocobalamina",
+          "2,750 mcg"
+        ],
+        [
+          "Vehículo, c.b.p.",
+          "1 ml"
+        ]
+      ]
+    }
   },
   {
     "name": "BIO DEXAVET",
     "image": "img/110.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Dexametazona",
+          "21 mg"
+        ],
+        [
+          "Fosfato de Sodio",
+          "2 mg"
+        ],
+        [
+          "Vehículo c.b.p.",
+          "1 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antiinflamatorios"
     ],
@@ -175,6 +270,19 @@
   {
     "name": "BIO HIERRO 200",
     "image": "img/47.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Hierro Dextrán",
+          "200 gr"
+        ],
+        [
+          "Vehículo, c.b.p.",
+          "100 ml"
+        ]
+      ]
+    },
     "tags": [
       "Suplementos"
     ],
@@ -211,6 +319,19 @@
   {
     "name": "BIO MELUBRIN 500",
     "image": "img/112.jpg",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Dipirona Sódica (Metamizol)",
+          "500 mg"
+        ],
+        [
+          "Vehículo usp c.b.p.",
+          "1.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Suplementos"
     ],
@@ -242,6 +363,31 @@
   {
     "name": "BIO PEN FORTE 20 MILL",
     "image": "img/118.webp",
+    "formula": {
+      "header": "Por cada millón de UI",
+      "rows": [
+        [
+          "Penicilina G ProcainIca",
+          "1´000,000 UI"
+        ],
+        [
+          "Dihidroestreptomicina Base",
+          "1,250 mg"
+        ],
+        [
+          "Diclofenaco Sódico",
+          "75.0 mg"
+        ],
+        [
+          "Difenhidramina Clorhidrato",
+          "25.0 mg"
+        ],
+        [
+          "Vehículo, c.b.p.",
+          "5.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antibióticos"
     ],
@@ -258,6 +404,35 @@
   {
     "name": "CATARROL RUMIANTES",
     "image": "img/128.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Florfenicol Base",
+          "230 mg"
+        ],
+        [
+          "Lincomicina Base",
+          "70 mg"
+        ],
+        [
+          "Ambroxol HCI",
+          "10 mg"
+        ],
+        [
+          "Difenhidramina HCI",
+          "5 mg"
+        ],
+        [
+          "Flunixin Meglumin",
+          "15 mg"
+        ],
+        [
+          "Vehículo c.b.p.",
+          "1 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antiinflamatorios"
     ],
@@ -279,6 +454,27 @@
   {
     "name": "CEFTIBIO RTU",
     "image": "img/130.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Ceftiofur HCL",
+          "50 mg"
+        ],
+        [
+          "Diclofenaco Sódico",
+          "25 mg"
+        ],
+        [
+          "Guayfenesina",
+          "250 mg"
+        ],
+        [
+          "Vehículo, c.b.p.",
+          "1 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antibióticos"
     ],
@@ -300,6 +496,23 @@
   {
     "name": "DIPIROTRIL",
     "image": "img/138.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Enrofloxacina Base",
+          "50.0 mg"
+        ],
+        [
+          "Dipirona Sódica",
+          "280.0 mg"
+        ],
+        [
+          "Vehículo Estéril, c.b.p",
+          "1.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antiparasitarios"
     ],
@@ -336,6 +549,19 @@
   {
     "name": "ENROBIO 50",
     "image": "img/140.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Enrofloxacina Base",
+          "50 mg"
+        ],
+        [
+          "Vehículo c.b.p.",
+          "1 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antibióticos"
     ],
@@ -367,6 +593,19 @@
   {
     "name": "ENROBIO 100",
     "image": "img/141.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Enrofloxacina Base",
+          "100.0 mg"
+        ],
+        [
+          "Vehículo c.b.p.",
+          "1 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antibióticos"
     ],
@@ -398,6 +637,31 @@
   {
     "name": "FLOR BIO 300",
     "image": "img/151.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Florfenicol Base",
+          "300 mg"
+        ],
+        [
+          "Ambroxol HCI",
+          "12mg"
+        ],
+        [
+          "Difenhidramina HCI",
+          "20mg"
+        ],
+        [
+          "Diclofenaco Na",
+          "30mg"
+        ],
+        [
+          "Vehículo c.b.p.",
+          "1 ml"
+        ]
+      ]
+    },
     "tags": [
       "Probióticos"
     ],
@@ -419,6 +683,19 @@
   {
     "name": "GENTABIO 100",
     "image": "img/160.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Gentamicina Base",
+          "100.0 mg"
+        ],
+        [
+          "Vehículo  c.b.p.",
+          "1.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antibióticos"
     ],
@@ -450,6 +727,19 @@
   {
     "name": "INVERMEX",
     "image": "img/21.webp",
+    "formula": {
+      "header": "Por cada 100 ml",
+      "rows": [
+        [
+          "Ivermectina",
+          "1.0 g"
+        ],
+        [
+          "Vehículo, c.b.p",
+          "100.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antiparasitarios"
     ],
@@ -491,6 +781,23 @@
   {
     "name": "INVERMEX ADE",
     "image": "img/23.webp",
+    "formula": {
+      "header": "Por jeringa",
+      "rows": [
+        [
+          "Ivermectina Base",
+          "4.8 mg"
+        ],
+        [
+          "Fenbendazol Base",
+          "240.0 g"
+        ],
+        [
+          "Excipiente, c.b.p.",
+          "1.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antiparasitarios"
     ],
@@ -532,6 +839,23 @@
   {
     "name": "INVERMEX B12",
     "image": "img/25.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Ivermectina",
+          "10 mg"
+        ],
+        [
+          "Vitamina B12",
+          "166 mcg"
+        ],
+        [
+          "Vehículo, c.b.p",
+          "1 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antiparasitarios"
     ],
@@ -568,6 +892,23 @@
   {
     "name": "INVERMEX PREMIX FORTE",
     "image": "img/27.webp",
+    "formula": {
+      "header": "Por cada gramo",
+      "rows": [
+        [
+          "Ivermectina",
+          "6.0 mg"
+        ],
+        [
+          "Fenbendazol",
+          "30.0 mg"
+        ],
+        [
+          "Excipiente, c.b.p",
+          "1.0 g"
+        ]
+      ]
+    },
     "tags": [
       "Antiparasitarios"
     ],
@@ -599,6 +940,39 @@
   {
     "name": "INVERSOL ADE PASTA FORTE",
     "image": "img/33.webp",
+    "formula": {
+      "header": "Por jeringa",
+      "rows": [
+        [
+          "Fenbendazol Base",
+          "6,000.0 mg"
+        ],
+        [
+          "Ivermectina Base",
+          "120.0 mg"
+        ],
+        [
+          "Prazicuantel Base",
+          "600.0 mg"
+        ],
+        [
+          "Vitamina A Propionato",
+          "10,000 UI"
+        ],
+        [
+          "Vitamina D3 Colecalciferol",
+          "1.400 UI"
+        ],
+        [
+          "Vitamina E Tocoferol",
+          "10 UI"
+        ],
+        [
+          "Excipiente, c.b.p",
+          "12.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antiparasitarios"
     ],
@@ -615,6 +989,19 @@
   {
     "name": "LAMICIL 100/FORTE",
     "image": "img/167.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Oxitetraciclina Clorhidrato",
+          "100.0 mg"
+        ],
+        [
+          "Vehículo USP c.b.p.",
+          "1.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antifúngicos"
     ],
@@ -651,6 +1038,19 @@
   {
     "name": "LAMICIL 200/LA",
     "image": "img/168.jpg",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Oxitetraciclina Clorhidrato",
+          "200.0 mg"
+        ],
+        [
+          "Vehículo c.b.p.",
+          "1.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antifúngicos"
     ],
@@ -682,6 +1082,19 @@
   {
     "name": "LAMICIL 50/LIQUIDA",
     "image": "img/166.webp",
+    "formula": {
+      "header": "Por cada 1 mililitro",
+      "rows": [
+        [
+          "Oxitetraciclina HCI",
+          "50.0 mg"
+        ],
+        [
+          "Vehículo, c.b.p.",
+          "1.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antifúngicos"
     ],
@@ -698,6 +1111,27 @@
   {
     "name": "MASTI BIO FORTE",
     "image": "img/170.webp",
+    "formula": {
+      "header": "Por jeringa",
+      "rows": [
+        [
+          "Lincomicina Base",
+          "200 mg"
+        ],
+        [
+          "Neomicina Base",
+          "200 mg"
+        ],
+        [
+          "Metilprednisolona",
+          "5 mg"
+        ],
+        [
+          "Vehículo Acuoso c.b.p.",
+          "10 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antibióticos"
     ],
@@ -714,6 +1148,23 @@
   {
     "name": "MUCOTRYL 100 IM",
     "image": "img/174.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Enrofloxacina Base",
+          "100.0 mg"
+        ],
+        [
+          "Ambroxol HCI",
+          "1.0 mg"
+        ],
+        [
+          "Vehículo c.b.p.",
+          "1.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Mucoliticos"
     ],
@@ -740,6 +1191,23 @@
   {
     "name": "NEUMO ESPECTOL",
     "image": "img/176.webp",
+    "formula": {
+      "header": "Por 100 mililitros",
+      "rows": [
+        [
+          "Enrofloxacina",
+          "10.0 mg"
+        ],
+        [
+          "Ambroxol HCI",
+          "1.0 mg"
+        ],
+        [
+          "Vehículo c.b.p.",
+          "100.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Respiratorio"
     ],
@@ -776,6 +1244,19 @@
   {
     "name": "OXITETRACLOR ANTIDIARREICO",
     "image": "img/179.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Oxitetraciclina",
+          "200 mg"
+        ],
+        [
+          "Vehículo c.b.p.",
+          "1.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antidiarreicos"
     ],
@@ -797,6 +1278,19 @@
   {
     "name": "OXITETRACLOR ANTIDIARREICO AVES",
     "image": "img/180.webp",
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Oxitetraciclina Base",
+          "200 mg"
+        ],
+        [
+          "Vehículo c.b.p.",
+          "1.0 ml"
+        ]
+      ]
+    },
     "tags": [
       "Antidiarreicos"
     ],
@@ -817,13 +1311,44 @@
   },
   {
     "name": "TRIBENZATIL 1 Mill AVIAR",
-    "format": [
-      {
-        "unit": "50 ML",
-        "price": 187.0,
-        "code": "518"
-      }
+    "info": "Oxitetraclor Antidiarreico para Aves, es un tónico natural vitaminado, para aves de ornato y competencia, sanas y fuertes, contra de bacterias grampositivas, gramnegativas y micoplasmas.",
+    "dosis": "Oral diluido: Agregar 10 gotas al agua de bebida diariamente, durante 3 a 5 días. Consultar al médico Veterinario.",
+    "formats": [
+      [
+        "518",
+        "50 ML",
+        187.0
+      ]
     ],
+    "formula": {
+      "header": "Por frasco",
+      "rows": [
+        [
+          "Penicilina G Benzatina",
+          "1´000,000 UI"
+        ],
+        [
+          "Estreptomicina Base",
+          "1 g"
+        ],
+        [
+          "Tetraciclina Base",
+          "500 mg"
+        ],
+        [
+          "Vitamina B12",
+          "720 mcg"
+        ],
+        [
+          "Dexametazona 21 Fosfato",
+          "300 mcg"
+        ],
+        [
+          "Frasco con diluente",
+          "25 ml"
+        ]
+      ]
+    },
     "image": "img/188.webp",
     "tags": [
       "Antiparasitarios"
@@ -831,13 +1356,40 @@
   },
   {
     "name": "TRIBENZATIL 2 Mill AVIAR",
-    "format": [
-      {
-        "unit": "100 ML",
-        "price": 330.0,
-        "code": "519"
-      }
+    "info": "Antibiótico inyectable de uso veterinario formulado a base de penicilinas de acción combinada, diseñado para proporcionar un efecto inmediato y prolongado en el tratamiento de infecciones bacterianas en aves.Su formulación integra fracciones de absorción rápida y lenta, lo que permite alcanzar concentraciones terapéuticas eficaces en poco tiempo y mantenerlas durante un periodo extendido, reduciendo la frecuencia de administración.",
+    "dosis": "Intramuscular: 1 a 2 ml por cada kg de peso corporal cada 12 a 24 hrs, durante 3 a 5 días",
+    "formats": [
+      [
+        "519",
+        "100 ML",
+        330.0
+      ]
     ],
+    "formula": {
+      "header": "Por cada 1´000,000 de UI",
+      "rows": [
+        [
+          "Penicilina G Benzatina",
+          "2´000,000 UI"
+        ],
+        [
+          "Estreptomicina Base",
+          "2 g"
+        ],
+        [
+          "Tetraciclina Base",
+          "1 g"
+        ],
+        [
+          "Vitamina B12",
+          "3,000mcg"
+        ],
+        [
+          "Frasco con diluente",
+          "100 ml"
+        ]
+      ]
+    },
     "image": "img/189.webp",
     "tags": [
       "Antiparasitarios"
@@ -845,13 +1397,36 @@
   },
   {
     "name": "TRIBENZATIL 12 Mill",
-    "format": [
-      {
-        "unit": "12 Mill",
-        "price": 288.24,
-        "code": "338"
-      }
+    "info": "Antibiótico inyectable de uso veterinario formulado a base de penicilinas de acción combinada, diseñado para proporcionar un efecto inmediato y prolongado en el tratamiento de infecciones bacterianas en aves.Su formulación integra fracciones de absorción rápida y lenta, lo que permite alcanzar concentraciones terapéuticas eficaces en poco tiempo y mantenerlas durante un periodo extendido, reduciendo la frecuencia de administración.",
+    "dosis": "Intramuscular: 1 a 2 ml por cada kg de peso corporal cada 12 a 24 hrs, durante 3 a 5 días",
+    "formats": [
+      [
+        "338",
+        "12 Mill",
+        288.24
+      ]
     ],
+    "formula": {
+      "header": "Por frasco",
+      "rows": [
+        [
+          "Penicilina G Benzatina",
+          "50‘000,000 UI"
+        ],
+        [
+          "Estreptomicina Base",
+          "50 g"
+        ],
+        [
+          "Tetraciclina Base",
+          "25 mg"
+        ],
+        [
+          "Frasco diluente",
+          "..."
+        ]
+      ]
+    },
     "image": "img/empty.svg",
     "tags": [
       "Antiparasitarios"
@@ -859,13 +1434,36 @@
   },
   {
     "name": "TRIBENZATIL 4 Mill",
-    "format": [
-      {
-        "unit": "4 Mill",
-        "price": 0.0,
-        "code": "537"
-      }
+    "info": "Antibiótico inyectable de uso veterinario formulado a base de penicilinas de acción combinada, diseñado para proporcionar un efecto inmediato y prolongado en el tratamiento de infecciones bacterianas en aves.Su formulación integra fracciones de absorción rápida y lenta, lo que permite alcanzar concentraciones terapéuticas eficaces en poco tiempo y mantenerlas durante un periodo extendido, reduciendo la frecuencia de administración.",
+    "dosis": "Intramuscular: 1 a 2 ml por cada kg de peso corporal cada 12 a 24 hrs, durante 3 a 5 días",
+    "formats": [
+      [
+        "537",
+        "4 Mill",
+        0.0
+      ]
     ],
+    "formula": {
+      "header": "Por frasco",
+      "rows": [
+        [
+          "Penicilina G Benzatina",
+          "50‘000,000 UI"
+        ],
+        [
+          "Estreptomicina Base",
+          "50 g"
+        ],
+        [
+          "Tetraciclina Base",
+          "25 mg"
+        ],
+        [
+          "Frasco diluente",
+          "..."
+        ]
+      ]
+    },
     "image": "img/empty.svg",
     "tags": [
       "Antiparasitarios"
@@ -873,13 +1471,36 @@
   },
   {
     "name": "TRIBENZATIL 6 Mill",
-    "format": [
-      {
-        "unit": "6 Mill",
-        "price": 150.68,
-        "code": "337"
-      }
+    "info": "Antibiótico inyectable de uso veterinario formulado a base de penicilinas de acción combinada, diseñado para proporcionar un efecto inmediato y prolongado en el tratamiento de infecciones bacterianas en aves.Su formulación integra fracciones de absorción rápida y lenta, lo que permite alcanzar concentraciones terapéuticas eficaces en poco tiempo y mantenerlas durante un periodo extendido, reduciendo la frecuencia de administración.",
+    "dosis": "Intramuscular: 1 a 2 ml por cada kg de peso corporal cada 12 a 24 hrs, durante 3 a 5 días",
+    "formats": [
+      [
+        "337",
+        "6 Mill",
+        150.68
+      ]
     ],
+    "formula": {
+      "header": "Por cada 1´000,000 de UI",
+      "rows": [
+        [
+          "Penicilina G Benzatina",
+          "1´000,000 UI"
+        ],
+        [
+          "Estreptomicina Base",
+          "1,000 mg"
+        ],
+        [
+          "Tetraciclina Base",
+          "500 mg"
+        ],
+        [
+          "Diluyente Inyectable",
+          "6 ml"
+        ]
+      ]
+    },
     "image": "img/192.webp",
     "tags": [
       "Antiparasitarios"
@@ -887,13 +1508,36 @@
   },
   {
     "name": "TRIBENZATIL 50 Mill",
-    "format": [
-      {
-        "unit": "50 Mill",
-        "price": 858.0,
-        "code": "339"
-      }
+    "info": "Antibiótico inyectable de uso veterinario formulado a base de penicilinas de acción combinada, diseñado para proporcionar un efecto inmediato y prolongado en el tratamiento de infecciones bacterianas en aves.Su formulación integra fracciones de absorción rápida y lenta, lo que permite alcanzar concentraciones terapéuticas eficaces en poco tiempo y mantenerlas durante un periodo extendido, reduciendo la frecuencia de administración.",
+    "dosis": "Intramuscular: 1 a 2 ml por cada kg de peso corporal cada 12 a 24 hrs, durante 3 a 5 días",
+    "formats": [
+      [
+        "339",
+        "50 Mill",
+        858.0
+      ]
     ],
+    "formula": {
+      "header": "Por frasco",
+      "rows": [
+        [
+          "Penicilina G Benzatina",
+          "50‘000,000 UI"
+        ],
+        [
+          "Estreptomicina Base",
+          "50 g"
+        ],
+        [
+          "Tetraciclina Base",
+          "25 mg"
+        ],
+        [
+          "Frasco diluente",
+          "..."
+        ]
+      ]
+    },
     "image": "img/193.webp",
     "tags": [
       "Antiparasitarios"
@@ -901,13 +1545,36 @@
   },
   {
     "name": "TRIBENZATIL 1/2 Mill PUPPY",
-    "format": [
-      {
-        "unit": "1/2 Mill",
-        "price": 85.16,
-        "code": "340"
-      }
+    "info": "Antibiótico inyectable de uso veterinario formulado a base de penicilinas de acción combinada, diseñado para proporcionar un efecto inmediato y prolongado en el tratamiento de infecciones bacterianas en aves.Su formulación integra fracciones de absorción rápida y lenta, lo que permite alcanzar concentraciones terapéuticas eficaces en poco tiempo y mantenerlas durante un periodo extendido, reduciendo la frecuencia de administración.",
+    "dosis": "Intramuscular: 1 a 2 ml por cada kg de peso corporal cada 12 a 24 hrs, durante 3 a 5 días",
+    "formats": [
+      [
+        "340",
+        "1/2 Mill",
+        85.16
+      ]
     ],
+    "formula": {
+      "header": "Por 1'000,000 de UI",
+      "rows": [
+        [
+          "Penicilina G Benzatina",
+          "1'000,000 UI"
+        ],
+        [
+          "Estreptomicina base",
+          "1,000 mg"
+        ],
+        [
+          "Tetraciclina base",
+          "500 mg"
+        ],
+        [
+          "Diluyente inyectable",
+          "6 ml"
+        ]
+      ]
+    },
     "image": "img/190.webp",
     "tags": [
       "Antiparasitarios"
@@ -915,13 +1582,36 @@
   },
   {
     "name": "TRIBENZATIL 1 Mill PUPPY",
-    "format": [
-      {
-        "unit": "1 Mill",
-        "price": 129.62,
-        "code": "490"
-      }
+    "info": "Antibiótico inyectable de uso veterinario formulado a base de penicilinas de acción combinada, diseñado para proporcionar un efecto inmediato y prolongado en el tratamiento de infecciones bacterianas en aves.Su formulación integra fracciones de absorción rápida y lenta, lo que permite alcanzar concentraciones terapéuticas eficaces en poco tiempo y mantenerlas durante un periodo extendido, reduciendo la frecuencia de administración.",
+    "dosis": "Intramuscular: 1 a 2 ml por cada kg de peso corporal cada 12 a 24 hrs, durante 3 a 5 días",
+    "formats": [
+      [
+        "490",
+        "1 Mill",
+        129.62
+      ]
     ],
+    "formula": {
+      "header": "Por cada 1´000,000 de UI",
+      "rows": [
+        [
+          "Penicilina G Benzatina",
+          "1'000,000 UI"
+        ],
+        [
+          "Estreptomicina base",
+          "1 g"
+        ],
+        [
+          "Tetraciclina base",
+          "500 mg"
+        ],
+        [
+          "Frasco con diluyente",
+          "..."
+        ]
+      ]
+    },
     "image": "img/191.webp",
     "tags": [
       "Antiparasitarios"
@@ -929,13 +1619,40 @@
   },
   {
     "name": "TRIBENZATIL 1/2 Mill AVIAR",
-    "format": [
-      {
-        "unit": "25 ML",
-        "price": 94.0,
-        "code": "341"
-      }
+    "info": "Antibiótico inyectable de uso veterinario formulado a base de penicilinas de acción combinada, diseñado para proporcionar un efecto inmediato y prolongado en el tratamiento de infecciones bacterianas en aves.Su formulación integra fracciones de absorción rápida y lenta, lo que permite alcanzar concentraciones terapéuticas eficaces en poco tiempo y mantenerlas durante un periodo extendido, reduciendo la frecuencia de administración.",
+    "dosis": "Intramuscular: 1 a 2 ml por cada kg de peso corporal cada 12 a 24 hrs, durante 3 a 5 días",
+    "formats": [
+      [
+        "341",
+        "25 ML",
+        94.0
+      ]
     ],
+    "formula": {
+      "header": "Por frasco",
+      "rows": [
+        [
+          "Penicilina G Benzatina",
+          "500,000 UI"
+        ],
+        [
+          "Estreptomicina Base",
+          "500 mg"
+        ],
+        [
+          "Tetraciclina Base",
+          "250 mg"
+        ],
+        [
+          "Vitamina B12",
+          "750 mcg"
+        ],
+        [
+          "Frasco con diluente",
+          "25 ml"
+        ]
+      ]
+    },
     "image": "img/187.webp",
     "tags": [
       "Antiparasitarios"
@@ -947,6 +1664,19 @@
     "tags": [
       "Antibióticos"
     ],
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Tilosina Base",
+          "200.0 mg"
+        ],
+        [
+          "Vehículo usp c.b.p.",
+          "1.0 ml"
+        ]
+      ]
+    },
     "formats": [
       [
         344,
@@ -978,6 +1708,31 @@
     "tags": [
       "Vitaminas"
     ],
+    "formula": {
+      "header": "Por mililitro",
+      "rows": [
+        [
+          "Albendazol",
+          "500,000 UI"
+        ],
+        [
+          "Cobalto Sulfato",
+          "75,000 UI"
+        ],
+        [
+          "Selenio Sódico",
+          "50 UI"
+        ],
+        [
+          "Carbonato Zinc",
+          "1,560 mcg"
+        ],
+        [
+          "Vehículo, c.b.p",
+          "1.0 ml"
+        ]
+      ]
+    },
     "formats": [
       [
         363,
