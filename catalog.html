@@ -36,10 +36,10 @@
             <div class="catalog-search">
                 <input id="catalogSearch" type="text" ng-model="searchQuery"
                     placeholder="Buscar nombre/fórmula..." class="filter-input">
+                <button class="catalog-cart-btn" type="button" ng-click="toggleCart()" aria-label="Abrir carrito">
+                    🛒 <span class="cart-badge">{{cartItemCount()}}</span>
+                </button>
             </div>
-            <button class="floating-cart-btn" type="button" ng-click="toggleCart()" aria-label="Abrir carrito">
-                🛒 <span class="cart-badge">{{cartItemCount()}}</span>
-            </button>
         </section>
 
         <div class="cart-backdrop" ng-if="cartOpen" ng-click="toggleCart()"></div>
@@ -109,8 +109,8 @@
                             </thead>
                             <tbody>
                                 <tr ng-repeat="format in item.formats">
-                                    <td><button class="btn-cart" type="button" ng-click="addToCart(item, format)"
-                                            ng-class="{'in-cart': isInCart(item, format)}">+</button></td>
+                                    <td><button class="btn-cart" type="button" ng-click="toggleItemInCart(item, format)"
+                                            ng-class="{'in-cart': isInCart(item, format)}">{{isInCart(item, format) ? '-' : '+'}}</button></td>
                                     <td>{{format[1]}}</td>
                                     <td>{{format[2] !== null ? ('$' + (format[2] | number:2)) : 'Consultar'}}</td>
                                 </tr>

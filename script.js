@@ -179,28 +179,35 @@ angular.module('miApp', ['ngMaterial'])
         };
 
         $scope.addPromoToCart = function (promo) {
-            if (!$scope.catalog.length || !promo || !promo.code) {
+            if (!promo || !promo.code) {
                 return;
             }
-            var code = String(promo.code);
-            var found = null;
-            $scope.catalog.some(function (item) {
-                return (item.formats || []).some(function (format) {
-                    if (String(format[0]) === code) {
-                        found = {
-                            item: item,
-                            format: format
-                        };
-                        return true;
-                    }
-                    return false;
-                });
-            });
+            // Always use price from item-code-promos.json
+            var promoFormat = [promo.code, promo.unit, promo.price];
+            $rootScope.addToCart({ name: promo.name }, promoFormat, { promo: true, code: String(promo.code) });
+        };
 
-            if (found) {
-                $rootScope.addToCart(found.item, found.format, { promo: true, code: code });
+        $scope.isPromoInCart = function (promo) {
+            if (!promo || !promo.code || !promo.unit) {
+                return false;
+            }
+            var promoId = promo.name + '|' + promo.unit + '|promo';
+            return $rootScope.cartItems.some(function (line) {
+                return line.id === promoId;
+            });
+        };
+
+        $scope.togglePromoInCart = function (promo) {
+            if ($scope.isPromoInCart(promo)) {
+                // Remove from cart
+                var promoId = promo.name + '|' + promo.unit + '|promo';
+                $rootScope.cartItems = $rootScope.cartItems.filter(function (line) {
+                    return line.id !== promoId;
+                });
+                $scope.cartItems = $rootScope.cartItems;
             } else {
-                $rootScope.addToCart({ name: promo.name }, [promo.code, promo.unit, promo.price], { promo: true, code: code });
+                // Add to cart
+                $scope.addPromoToCart(promo);
             }
         };
 
@@ -302,6 +309,20 @@ angular.module('miApp', ['ngMaterial'])
             } else {
                 line.quantity -= 1;
                 updateCartLine(line);
+            }
+        };
+
+        $scope.toggleItemInCart = function (item, format) {
+            if ($scope.isInCart(item, format)) {
+                // Remove from cart
+                var formatId = item.name + '|' + format[1];
+                $rootScope.cartItems = $rootScope.cartItems.filter(function (line) {
+                    return line.id !== formatId;
+                });
+                $scope.cartItems = $rootScope.cartItems;
+            } else {
+                // Add to cart
+                $scope.addToCart(item, format);
             }
         };
 

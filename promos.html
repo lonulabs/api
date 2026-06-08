@@ -76,14 +76,14 @@
                     <div class="preview-image">
                         <img ng-src="{{getPromoImageUrl(activeIndex + 1)}}" alt="{{activePromo.name}}">
                     </div>
+                    <button class="preview-close-btn" type="button" ng-click="closeMobilePreview()" aria-label="Cerrar vista previa">✕</button>
                     <div class="preview-info">
-                        <button class="preview-close-btn" type="button" ng-click="closeMobilePreview()" aria-label="Cerrar vista previa">✕</button>
-                        <span class="preview-unit">{{activePromo.unit}}</span>
-                        <h2>{{activePromo.name}}</h2>
-                        <p class="preview-code">Código: {{activePromo.code}}</p>
-                        <p class="preview-description">Precio especial por tiempo limitado. Aprovecha esta promoción exclusiva.</p>
+                        <h2>Aprobeche</h2>
                         <div class="preview-price">${{activePromo.price | number:2}}</div>
-                        <button class="btn-primary" type="button" ng-click="addPromoToCart(activePromo)">Solicitar ahora</button>
+                        <button class="btn-primary promo-action-btn" type="button" ng-click="togglePromoInCart(activePromo)"
+                                ng-class="{'in-cart': isPromoInCart(activePromo)}">
+                            {{isPromoInCart(activePromo) ? 'Remover del carrito' : 'Solicitar ahora'}}
+                        </button>
                     </div>
                 </div>
             </aside>
@@ -102,8 +102,9 @@
                         <div class="promo-card-body">
                             <p class="promo-label">{{promo.unit}}</p>
                             <h4>{{promo.name}}</h4>
-                            <button class="promo-price-btn" type="button" ng-click="addPromoToCart(promo)">
-                                ${{promo.price | number:2}}
+                            <button class="promo-price-btn" type="button" ng-click="togglePromoInCart(promo)"
+                                    ng-class="{'in-cart': isPromoInCart(promo)}">
+                                {{isPromoInCart(promo) ? '$' + (promo.price | number:2) : '$' + (promo.price | number:2)}}
                             </button>
                         </div>
                     </article>
